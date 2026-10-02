@@ -1,0 +1,649 @@
+{
+  "categories": [
+    {
+      "id": "shakes",
+      "name": "Shakes",
+      "slug": "shakes",
+      "label": "Formula 1 Meal Replacements",
+      "product_count": 4,
+      "parent_category": "-",
+      "status": "Active",
+      "image": "https://images.unsplash.com/photo-1553530666-ba11a7da3888?auto=format&fit=crop&w=700&q=80"
+    },
+    {
+      "id": "teas",
+      "name": "Teas & Beverages",
+      "slug": "teas-beverages",
+      "label": "Afresh Energy & Aloe",
+      "product_count": 3,
+      "parent_category": "-",
+      "status": "Active",
+      "image": "https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=700&q=80"
+    },
+    {
+      "id": "sports",
+      "name": "Sports Nutrition",
+      "slug": "sports-nutrition",
+      "label": "Recovery & Active Fitness",
+      "product_count": 1,
+      "parent_category": "-",
+      "status": "Active",
+      "image": "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=700&q=80"
+    },
+    {
+      "id": "targeted",
+      "name": "Targeted Health",
+      "slug": "targeted-health",
+      "label": "Digestion, Fiber & Heart",
+      "product_count": 3,
+      "parent_category": "-",
+      "status": "Active",
+      "image": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=700&q=80"
+    },
+    {
+      "id": "ayurveda",
+      "name": "Ayurveda",
+      "slug": "ayurveda",
+      "label": "vritilife® Ayurvedic",
+      "product_count": 1,
+      "parent_category": "-",
+      "status": "Active",
+      "image": "https://images.unsplash.com/photo-1608248597359-548762744837?auto=format&fit=crop&w=700&q=80"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Formula 1 Nutritional Shake Mix (Kulfi)",
+      "sku": "HL-F1-KUL",
+      "cat": "Shakes",
+      "category": "Shakes",
+      "brand": "Herbalife Nutrition",
+      "price": 2385,
+      "oldPrice": 2650,
+      "stock": 44,
+      "status": "Active",
+      "image": "https://images.unsplash.com/photo-1553530666-ba11a7da3888?auto=format&fit=crop&w=650&q=80",
+      "rating": 4.9,
+      "reviews": 1420,
+      "tag": "Bestseller",
+      "tagClass": "badge-bestseller",
+      "spec": "9g High Quality Protein • 18 Essential Micronutrients (500g)",
+      "flavors": [
+        "Kulfi",
+        "Dutch Chocolate",
+        "French Vanilla",
+        "Mango",
+        "Paan",
+        "Rose Kheer"
+      ],
+      "desc": "A rich, creamy meal replacement formulated specifically for Indian tastes. Delivers essential vitamins, minerals, and high-quality soy protein to support daily wellness.",
+      "date": "2026-09-15"
+    },
+    {
+      "id": 2,
+      "name": "Formula 1 Nutritional Shake Mix (Dutch Chocolate)",
+      "sku": "HL-F1-CHO",
+      "cat": "Shakes",
+      "category": "Shakes",
+      "brand": "Herbalife Nutrition",
+      "price": 2385,
+      "oldPrice": null,
+      "stock": 38,
+      "status": "Active",
+      "image": "https://images.unsplash.com/photo-1577805947697-89e18249d767?auto=format&fit=crop&w=650&q=80",
+      "rating": 4.9,
+      "reviews": 1180,
+      "tag": "Favorite",
+      "tagClass": "badge-bestseller",
+      "spec": "Smooth Cocoa • 18 Micronutrients (500g)",
+      "flavors": [
+        "Dutch Chocolate",
+        "Kulfi",
+        "Mango",
+        "French Vanilla",
+        "Orange Cream"
+      ],
+      "desc": "Indulgent Dutch chocolate shake blend. Perfect low-calorie meal replacement with balanced carbohydrates, dietary fiber, and quality protein to sustain energy.",
+      "date": "2026-09-18"
+    },
+    {
+      "id": 3,
+      "name": "Afresh Energy Drink Mix (Lemon)",
+      "sku": "HL-AFR-LEM",
+      "cat": "Teas & Beverages",
+      "category": "Teas & Beverages",
+      "brand": "Herbalife Nutrition",
+      "price": 845,
+      "oldPrice": 950,
+      "stock": 59,
+      "status": "Active",
+      "image": "https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=650&q=80",
+      "rating": 4.8,
+      "reviews": 940,
+      "tag": "Energy Boost",
+      "tagClass": "badge-energy",
+      "spec": "Orange Pekoe & Green Tea Extract (50g)",
+      "flavors": [
+        "Lemon",
+        "Ginger",
+        "Elaichi",
+        "Peach",
+        "Tulsi",
+        "Kashmiri Kahwa",
+        "Cinnamon"
+      ],
+      "desc": "Instant energy brew enriched with natural caffeine and antioxidant polyphenols. Helps enhance mental alertness and boosts metabolic calorie burn anytime of day.",
+      "date": "2026-09-20"
+    },
+    {
+      "id": 4,
+      "name": "Personalized Protein Powder (Formula 3 / PPP)",
+      "sku": "HL-PPP-001",
+      "cat": "Shakes",
+      "category": "Shakes",
+      "brand": "Herbalife Nutrition",
+      "price": 1530,
+      "oldPrice": 1700,
+      "stock": 25,
+      "status": "Active",
+      "image": "https://images.unsplash.com/photo-1593095948071-474c5cc2989d?auto=format&fit=crop&w=650&q=80",
+      "rating": 4.9,
+      "reviews": 820,
+      "tag": "Muscle & Fullness",
+      "tagClass": "badge-sport",
+      "spec": "5g Soy & Whey Protein per Scoop (200g/400g)",
+      "flavors": [
+        "Unflavored (Blends with Shake)"
+      ],
+      "desc": "Convenient fat-free protein boost designed to be blended directly into your Formula 1 shake. Helps satisfy hunger, curb cravings, and maintain lean muscle mass.",
+      "date": "2026-09-22"
+    },
+    {
+      "id": 5,
+      "name": "Herbal Aloe Concentrate (Mango)",
+      "sku": "HL-ALO-MAN",
+      "cat": "Teas & Beverages",
+      "category": "Teas & Beverages",
+      "brand": "Herbalife Nutrition",
+      "price": 2795,
+      "oldPrice": 3100,
+      "stock": 18,
+      "status": "Active",
+      "image": "https://images.unsplash.com/photo-1563227812-0ea4c22e6cc8?auto=format&fit=crop&w=650&q=80",
+      "rating": 4.9,
+      "reviews": 650,
+      "tag": "Digestive Care",
+      "tagClass": "badge-bestseller",
+      "spec": "Premium Purified Aloe Vera with Chamomile (500ml)",
+      "flavors": [
+        "Mango",
+        "Original"
+      ],
+      "desc": "Refreshing botanical drink that supports nutrient absorption and healthy gut digestion. Add 3 capfuls to 120ml cold water for an invigorating digestive tonic.",
+      "date": "2026-09-25"
+    },
+    {
+      "id": 6,
+      "name": "Cell-U-Loss Herbal Fluid Balance",
+      "sku": "HL-CUL-090",
+      "cat": "Targeted Health",
+      "category": "Targeted Health",
+      "brand": "Herbalife Nutrition",
+      "price": 1810,
+      "oldPrice": 2010,
+      "stock": 14,
+      "status": "Active",
+      "image": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=650&q=80",
+      "rating": 4.7,
+      "reviews": 510,
+      "tag": "Fluid Balance",
+      "tagClass": "badge-energy",
+      "spec": "Corn Silk Extract + Dandelion + Potassium (90 Tablets)",
+      "flavors": [
+        "Standard Tablets"
+      ],
+      "desc": "Formulated with corn silk extract, dandelion, and essential minerals to support the body's natural elimination of excess water and maintain healthy fluid equilibrium.",
+      "date": "2026-09-28"
+    },
+    {
+      "id": 7,
+      "name": "Afresh Energy Drink Mix (Kashmiri Kahwa)",
+      "sku": "HL-AFR-KAH",
+      "cat": "Teas & Beverages",
+      "category": "Teas & Beverages",
+      "brand": "Herbalife Nutrition",
+      "price": 845,
+      "oldPrice": null,
+      "stock": 6,
+      "status": "Low Stock",
+      "image": "https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=650&q=80",
+      "rating": 4.9,
+      "reviews": 610,
+      "tag": "Special Edition",
+      "tagClass": "badge-bestseller",
+      "spec": "Traditional Kashmiri Spices & Green Tea (50g)",
+      "flavors": [
+        "Kashmiri Kahwa",
+        "Elaichi",
+        "Ginger",
+        "Lemon"
+      ],
+      "desc": "Inspired by royal Kashmir valleys! A warming aromatic blend of cardamom, cinnamon, clove, and natural green tea extracts for instant rejuvenation.",
+      "date": "2026-09-29"
+    },
+    {
+      "id": 8,
+      "name": "Herbalife 30-Day Starter Nutrition Kit",
+      "sku": "HL-KIT-030",
+      "cat": "Shakes",
+      "category": "Shakes",
+      "brand": "Herbalife Nutrition",
+      "price": 6850,
+      "oldPrice": 7750,
+      "stock": 12,
+      "status": "Active",
+      "image": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=650&q=80",
+      "rating": 5,
+      "reviews": 420,
+      "tag": "Best Value Pack",
+      "tagClass": "badge-bestseller",
+      "spec": "2x Formula 1 + 1x PPP + 1x Afresh + Free Shaker Cup",
+      "flavors": [
+        "Kulfi + Chocolate",
+        "Vanilla + Mango",
+        "Chocolate + Berry"
+      ],
+      "desc": "The complete monthly nutrition program! Includes two canisters of Formula 1 Shakes, Personalized Protein Powder, Afresh Energy Drink, and a free Herbalife shaker cup.",
+      "date": "2026-09-30"
+    },
+    {
+      "id": 9,
+      "name": "Rebuild Strength Post-Workout Protein (Chocolate)",
+      "sku": "HL-H24-REB",
+      "cat": "Sports Nutrition",
+      "category": "Sports Nutrition",
+      "brand": "Herbalife 24",
+      "price": 3890,
+      "oldPrice": 4320,
+      "stock": 20,
+      "status": "Active",
+      "image": "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=650&q=80",
+      "rating": 4.9,
+      "reviews": 380,
+      "tag": "Informed-Sport",
+      "tagClass": "badge-sport",
+      "spec": "24g Whey & Casein Protein + BCAAs (1000g)",
+      "flavors": [
+        "Chocolate"
+      ],
+      "desc": "Certified Informed-Sport tested for banned substances. Delivers 24g of dual-source protein to rebuild fatigued muscles and speed up recovery post-workout.",
+      "date": "2026-10-01"
+    },
+    {
+      "id": 10,
+      "name": "vritilife® Triphala Digestive Care",
+      "sku": "HL-VRT-TRI",
+      "cat": "Ayurveda",
+      "category": "Ayurveda",
+      "brand": "vritilife",
+      "price": 1395,
+      "oldPrice": 1550,
+      "stock": 30,
+      "status": "Active",
+      "image": "https://images.unsplash.com/photo-1608248597359-548762744837?auto=format&fit=crop&w=650&q=80",
+      "rating": 4.8,
+      "reviews": 290,
+      "tag": "Ayurveda",
+      "tagClass": "badge-ayurveda",
+      "spec": "Amla, Haritaki & Bibhitaki Pure Extract (60 Tablets)",
+      "flavors": [
+        "Ayurvedic Tablets"
+      ],
+      "desc": "Formulated based on classical Ayurvedic principles. Promotes bowel regularity, gently cleanses the colon, and supports optimal digestion naturally.",
+      "date": "2026-10-01"
+    },
+    {
+      "id": 11,
+      "name": "Herbalifeline® Omega-3 Marine Lipids",
+      "sku": "HL-OMG-060",
+      "cat": "Targeted Health",
+      "category": "Targeted Health",
+      "brand": "Herbalife Nutrition",
+      "price": 2470,
+      "oldPrice": 2750,
+      "stock": 0,
+      "status": "Out of Stock",
+      "image": "https://images.unsplash.com/photo-1550572017-edd951aa8f72?auto=format&fit=crop&w=650&q=80",
+      "rating": 4.9,
+      "reviews": 430,
+      "tag": "Heart Health",
+      "tagClass": "badge-bestseller",
+      "spec": "EPA & DHA Omega-3 Fatty Acids + Vitamin E (60 Softgels)",
+      "flavors": [
+        "Softgels"
+      ],
+      "desc": "Rich source of essential Omega-3 fatty acids EPA and DHA. Supports normal cardiovascular and heart function, joint mobility, and cellular health.",
+      "date": "2026-10-01"
+    },
+    {
+      "id": 12,
+      "name": "Active Fiber Complex (Crisp Apple)",
+      "sku": "HL-FIB-APP",
+      "cat": "Targeted Health",
+      "category": "Targeted Health",
+      "brand": "Herbalife Nutrition",
+      "price": 2210,
+      "oldPrice": 2450,
+      "stock": 22,
+      "status": "Active",
+      "image": "https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&w=650&q=80",
+      "rating": 4.8,
+      "reviews": 310,
+      "tag": "Regularity",
+      "tagClass": "badge-energy",
+      "spec": "5g Soluble & Insoluble Dietary Fiber (210g)",
+      "flavors": [
+        "Crisp Apple",
+        "Unflavored"
+      ],
+      "desc": "Tasty, convenient dietary fiber drink powder. Supports gastrointestinal regularity, healthy bowel movement, and prolonged feeling of satiety.",
+      "date": "2026-10-02"
+    }
+  ],
+  "orders": [
+    {
+      "id": "ORD-9825",
+      "order_id": "#ORD-9825",
+      "customer": "Ananya Sen",
+      "email": "ananya.sen@example.com",
+      "phone": "+91 98765 43219",
+      "address": "Flat 402, Lotus Towers, Indiranagar, Bangalore 560038",
+      "date": "2026-10-02 11:40",
+      "amount": "₹2,505",
+      "subtotal": 2385,
+      "discount": 0,
+      "shipping": 120,
+      "source": "Website",
+      "status": "Processing",
+      "payment_status": "Paid",
+      "payment_method": "Razorpay (UPI: ananya@okhdfcbank)",
+      "payment_gateway": "Razorpay PG",
+      "transaction_id": "pay_rzp_d6niqib",
+      "tracking_info": "Preparing for courier dispatch",
+      "items": [
+        {
+          "id": 1,
+          "name": "Formula 1 Nutritional Shake Mix (Kulfi)",
+          "flavor": "Kulfi",
+          "qty": 1,
+          "price": 2385
+        }
+      ]
+    },
+    {
+      "id": "ORD-9824",
+      "order_id": "#ORD-9824",
+      "customer": "Ananya Sen",
+      "email": "ananya.sen@example.com",
+      "phone": "+91 98765 43219",
+      "address": "Flat 402, Lotus Towers, Indiranagar, Bangalore 560038",
+      "date": "2026-10-02 11:31",
+      "amount": "₹965",
+      "subtotal": 845,
+      "discount": 0,
+      "shipping": 120,
+      "source": "Website",
+      "status": "Processing",
+      "payment_method": "Cash on Delivery",
+      "tracking_info": "Preparing for courier dispatch",
+      "items": [
+        {
+          "id": 3,
+          "name": "Afresh Energy Drink Mix (Lemon)",
+          "flavor": "Lemon",
+          "qty": 1,
+          "price": 845
+        }
+      ]
+    },
+    {
+      "id": "ORD-9821",
+      "order_id": "#ORD-9821",
+      "customer": "Arjun Kumar",
+      "email": "arjun@example.com",
+      "phone": "+91 98765 43210",
+      "address": "123 MG Road, Apt 4B, Bangalore 560001",
+      "date": "2026-10-01 14:30",
+      "amount": "₹3,230",
+      "subtotal": 3230,
+      "discount": 0,
+      "shipping": 0,
+      "source": "Website",
+      "status": "Delivered",
+      "payment_method": "UPI",
+      "tracking_info": "BlueDart - BD9827361",
+      "items": [
+        {
+          "id": 1,
+          "name": "Formula 1 Nutritional Shake Mix (Kulfi)",
+          "flavor": "Kulfi",
+          "qty": 1,
+          "price": 2385
+        },
+        {
+          "id": 3,
+          "name": "Afresh Energy Drink Mix (Lemon)",
+          "flavor": "Lemon",
+          "qty": 1,
+          "price": 845
+        }
+      ]
+    },
+    {
+      "id": "ORD-9822",
+      "order_id": "#ORD-9822",
+      "customer": "Priya Singh",
+      "email": "priya@example.com",
+      "phone": "+91 98765 43211",
+      "address": "45 Park Street, Kolkata 700016",
+      "date": "2026-10-02 11:15",
+      "amount": "₹2,385",
+      "subtotal": 2385,
+      "discount": 0,
+      "shipping": 120,
+      "source": "Website",
+      "status": "Processing",
+      "payment_method": "Cash on Delivery",
+      "tracking_info": "Pending dispatch",
+      "items": [
+        {
+          "id": 2,
+          "name": "Formula 1 Nutritional Shake Mix (Dutch Chocolate)",
+          "flavor": "Dutch Chocolate",
+          "qty": 1,
+          "price": 2385
+        }
+      ]
+    },
+    {
+      "id": "ORD-9823",
+      "order_id": "#ORD-9823",
+      "customer": "Rahul Sharma",
+      "email": "rahul@example.com",
+      "phone": "+91 98765 43212",
+      "address": "78 Jubilee Hills, Hyderabad 500033",
+      "date": "2026-10-02 13:40",
+      "amount": "₹6,850",
+      "subtotal": 6850,
+      "discount": 0,
+      "shipping": 0,
+      "source": "Website",
+      "status": "Shipped",
+      "payment_method": "Online / Card",
+      "tracking_info": "Delhivery - DL882731",
+      "items": [
+        {
+          "id": 8,
+          "name": "Herbalife 30-Day Starter Nutrition Kit",
+          "flavor": "Kulfi + Chocolate",
+          "qty": 1,
+          "price": 6850
+        }
+      ]
+    }
+  ],
+  "coupons": [
+    {
+      "code": "RSWELL10",
+      "discount": "10%",
+      "discountRatio": 0.1,
+      "usage_limit": "500",
+      "used": "142",
+      "valid_until": "2026-12-31",
+      "status": "Active"
+    },
+    {
+      "code": "HERBALIFE10",
+      "discount": "10%",
+      "discountRatio": 0.1,
+      "usage_limit": "1000",
+      "used": "389",
+      "valid_until": "2026-12-31",
+      "status": "Active"
+    },
+    {
+      "code": "FIT2026",
+      "discount": "15%",
+      "discountRatio": 0.15,
+      "usage_limit": "200",
+      "used": "45",
+      "valid_until": "2026-11-30",
+      "status": "Active"
+    },
+    {
+      "code": "WELCOME20",
+      "discount": "20%",
+      "discountRatio": 0.2,
+      "usage_limit": "100",
+      "used": "88",
+      "valid_until": "2026-10-31",
+      "status": "Active"
+    }
+  ],
+  "customers": [
+    {
+      "name": "Arjun Kumar",
+      "place": "Bangalore",
+      "email": "arjun@example.com",
+      "phone": "+91 98765 43210",
+      "address": "123 MG Road, Apt 4B, Bangalore 560001",
+      "date_of_birth": "1992-05-14",
+      "age": 34,
+      "gender": "Male",
+      "total_orders": 5,
+      "spent": "₹12,450"
+    },
+    {
+      "name": "Priya Singh",
+      "place": "Kolkata",
+      "email": "priya@example.com",
+      "phone": "+91 98765 43211",
+      "address": "45 Park Street, Kolkata 700016",
+      "date_of_birth": "1996-08-22",
+      "age": 30,
+      "gender": "Female",
+      "total_orders": 2,
+      "spent": "₹4,890"
+    },
+    {
+      "name": "Rahul Sharma",
+      "place": "Hyderabad",
+      "email": "rahul@example.com",
+      "phone": "+91 98765 43212",
+      "address": "78 Jubilee Hills, Hyderabad 500033",
+      "date_of_birth": "1988-11-03",
+      "age": 38,
+      "gender": "Male",
+      "total_orders": 4,
+      "spent": "₹18,400"
+    },
+    {
+      "name": "Ananya Sen",
+      "place": "Bangalore 560038",
+      "email": "ananya.sen@example.com",
+      "phone": "+91 98765 43219",
+      "address": "Flat 402, Lotus Towers, Indiranagar, Bangalore 560038",
+      "date_of_birth": "1995-01-01",
+      "age": 31,
+      "gender": "Not Specified",
+      "total_orders": 2,
+      "spent": "₹965"
+    }
+  ],
+  "transactions": [
+    {
+      "id": "TXN-6742",
+      "transaction_id": "pay_rzp_d6niqib",
+      "order_id": "#ORD-9825",
+      "customer": "Ananya Sen",
+      "method": "Razorpay (UPI: ananya@okhdfcbank)",
+      "gateway": "Razorpay PG",
+      "amount": "₹2,505",
+      "status": "Success",
+      "date": "2026-10-02 11:40"
+    },
+    {
+      "id": "TXN-8821",
+      "transaction_id": "pay_rzp_9821Arj",
+      "order_id": "#ORD-9821",
+      "customer": "Arjun Kumar",
+      "method": "Razorpay (UPI / GPay)",
+      "gateway": "Razorpay",
+      "amount": "₹3,230",
+      "status": "Success",
+      "date": "2026-10-01 14:30"
+    },
+    {
+      "id": "TXN-8823",
+      "transaction_id": "pay_rzp_9823Rah",
+      "order_id": "#ORD-9823",
+      "customer": "Rahul Sharma",
+      "method": "Razorpay (Visa Credit Card)",
+      "gateway": "Razorpay",
+      "amount": "₹6,850",
+      "status": "Success",
+      "date": "2026-10-02 13:40"
+    }
+  ],
+  "payment_methods": [
+    {
+      "id": 1,
+      "method": "UPI Instant (GPay / PhonePe / Paytm / QR)",
+      "provider": "Razorpay / NPCI",
+      "transaction_fee": "0%",
+      "status": "Active"
+    },
+    {
+      "id": 2,
+      "method": "Credit & Debit Cards (Visa / Mastercard / RuPay)",
+      "provider": "Razorpay PG",
+      "transaction_fee": "1.8%",
+      "status": "Active"
+    },
+    {
+      "id": 3,
+      "method": "Net Banking (50+ Indian Banks)",
+      "provider": "Razorpay Direct Bank",
+      "transaction_fee": "1.5%",
+      "status": "Active"
+    },
+    {
+      "id": 4,
+      "method": "Cash on Delivery (Doorstep Verification)",
+      "provider": "Delhivery / BlueDart COD",
+      "transaction_fee": "₹0",
+      "status": "Active"
+    }
+  ]
+}

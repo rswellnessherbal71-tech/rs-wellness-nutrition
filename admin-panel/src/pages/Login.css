@@ -1,0 +1,117 @@
+.login-container {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  background-color: var(--color-background);
+}
+
+.login-image-section {
+  flex: 1;
+  background-image: url('/herbal-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: none; /* hidden on mobile */
+}
+
+@media (min-width: 1024px) {
+  .login-image-section {
+    display: block;
+  }
+}
+
+.login-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(20, 83, 45, 0.9) 0%, rgba(22, 101, 52, 0.7) 100%);
+  display: flex;
+  align-items: center;
+  padding: 4rem;
+}
+
+.login-form-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: white;
+}
+
+@media (min-width: 1024px) {
+  .login-form-section {
+    max-width: 500px;
+    box-shadow: -10px 0 30px rgba(0, 0, 0, 0.05);
+    z-index: 10;
+  }
+}
+
+.login-form-wrapper {
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-header {
+  margin-bottom: 2rem;
+}
+
+.input-with-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-icon {
+  position: absolute;
+  left: 1rem;
+  color: var(--color-text-secondary);
+}
+
+.input-with-icon .form-input {
+  padding-left: 2.75rem;
+  height: 48px;
+}
+
+.login-btn {
+  height: 48px;
+  font-size: 1rem;
+}
+
+.forgot-password {
+  font-size: 0.75rem;
+  color: var(--color-primary);
+  font-weight: 500;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+.error-alert {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  background-color: #FEE2E2;
+  color: #DC2626;
+  border-radius: var(--radius-md);
+  margin-bottom: 1.5rem;
+  font-size: 0.875rem;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.custom-checkbox {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--color-primary);
+  cursor: pointer;
+}
+
+@media (max-width: 1023px) {
+  .logo-mobile-only.hidden {
+    display: block !important;
+  }
+}

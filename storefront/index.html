@@ -1,0 +1,4615 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RS Wellness — Authentic Herbalife Nutrition India | Official Store</title>
+  <meta name="description"
+    content="Shop 100% genuine Herbalife Nutrition India products at RS Wellness. Formula 1 Nutritional Shakes, Afresh Energy Drink Mix, Protein Powders, and Ayurvedic nutrition at official MRP.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/png" href="logo.png">
+
+  <style>
+    /* ==========================================================================
+       RS WELLNESS DESIGN SYSTEM
+       - Modern, neat, and professional e-commerce aesthetics
+       - Typography: Plus Jakarta Sans (Headings) & Inter (Body)
+       - Color Palette: Deep Forest #0f5132, Herbal #15803d, Slate #0f172a, Canvas #f8fafc
+       ========================================================================== */
+    :root {
+      /* Brand Greens */
+      --hl-forest: #0f5132;
+      --hl-forest-dark: #093420;
+      --hl-forest-deep: #052215;
+      --hl-brand: #15803d;
+      --hl-brand-hover: #166534;
+      --hl-brand-tint: #f0fdf4;
+      --hl-brand-border: #bbf7d0;
+
+      /* Neutral Accents */
+      --hl-amber-light: #fffbeb;
+      --hl-amber-border: #fef3c7;
+      --hl-amber-text: #92400e;
+      --hl-gold: #f59e0b;
+
+      /* Page Surfaces & Canvas */
+      --bg-page: #f8fafc;
+      --card-bg: #ffffff;
+      --border-light: #e2e8f0;
+      --border-subtle: #f1f5f9;
+      --border-hover: #cbd5e1;
+
+      /* Modern Typography Slate */
+      --text-main: #0f172a;
+      --text-body: #334155;
+      --text-muted: #64748b;
+      --text-subtle: #94a3b8;
+
+      /* Radius & Shadows */
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 14px;
+      --radius-full: 9999px;
+
+      --shadow-card: 0 1px 3px rgba(15, 23, 42, 0.05), 0 1px 2px rgba(15, 23, 42, 0.03);
+      --shadow-hover: 0 10px 25px -4px rgba(15, 23, 42, 0.08), 0 4px 6px -2px rgba(15, 23, 42, 0.04);
+      --shadow-dropdown: 0 12px 30px -4px rgba(15, 23, 42, 0.12);
+      --shadow-drawer: -6px 0 30px rgba(15, 23, 42, 0.14);
+
+      --transition: 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      color: var(--text-body);
+      background-color: var(--bg-page);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4, .font-heading, .brand-name {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-weight: 700;
+      color: var(--text-main);
+      letter-spacing: -0.02em;
+      line-height: 1.25;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    button, input, select, textarea {
+      font-family: inherit;
+    }
+
+    button {
+      cursor: pointer;
+      border: none;
+      background: none;
+      outline: none;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Standard Button Styles */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 10px 20px;
+      border-radius: var(--radius-md);
+      font-size: 13.5px;
+      font-weight: 600;
+      transition: var(--transition);
+      white-space: nowrap;
+    }
+
+    .btn-primary {
+      background: var(--hl-forest);
+      color: #ffffff;
+      border: 1px solid var(--hl-forest);
+    }
+
+    .btn-primary:hover {
+      background: var(--hl-brand-hover);
+      border-color: var(--hl-brand-hover);
+      box-shadow: 0 4px 12px rgba(15, 81, 50, 0.2);
+      transform: translateY(-1px);
+    }
+
+    .btn-secondary {
+      background: #ffffff;
+      color: var(--text-main);
+      border: 1px solid var(--border-light);
+    }
+
+    .btn-secondary:hover {
+      background: var(--bg-page);
+      border-color: var(--border-hover);
+    }
+
+    .btn-admin-portal {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #0f172a;
+      color: #38bdf8;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 5px 12px;
+      border-radius: 20px;
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      text-decoration: none;
+      transition: all 0.2s ease;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .btn-admin-portal:hover {
+      background: #1e293b;
+      color: #7dd3fc;
+      border-color: #38bdf8;
+      transform: translateY(-1px);
+    }
+
+    .live-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #22c55e;
+      display: inline-block;
+      box-shadow: 0 0 6px #22c55e;
+      animation: pulse-dot 1.8s infinite;
+    }
+
+    @keyframes pulse-dot {
+      0% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(1.2); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+
+    /* Common Icon Sizing */
+    .icon {
+      width: 18px;
+      height: 18px;
+      stroke-width: 2;
+      stroke: currentColor;
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      flex-shrink: 0;
+    }
+
+    /* Section Structure */
+    section {
+      padding: 56px 0;
+    }
+
+    .section-headline {
+      text-align: center;
+      max-width: 640px;
+      margin: 0 auto 36px;
+    }
+
+    .section-eyebrow {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--hl-brand);
+      margin-bottom: 6px;
+    }
+
+    .section-headline h2 {
+      font-size: clamp(24px, 3vw, 32px);
+      margin-bottom: 8px;
+    }
+
+    .section-headline p {
+      font-size: 14.5px;
+      color: var(--text-muted);
+    }
+
+    /* ==========================================================================
+       TOP UTILITY ANNOUNCEMENT BAR
+       ========================================================================== */
+    .top-utility-bar {
+      background: var(--hl-forest-deep);
+      color: #e2e8f0;
+      font-size: 12px;
+      font-weight: 500;
+      padding: 6px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .top-utility-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .utility-badge {
+      background: rgba(21, 128, 61, 0.35);
+      border: 1px solid rgba(34, 197, 94, 0.4);
+      color: #86efac;
+      padding: 2px 8px;
+      border-radius: var(--radius-full);
+      font-size: 11px;
+      font-weight: 600;
+      margin-right: 6px;
+    }
+
+    .utility-links {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .utility-links a {
+      color: #cbd5e1;
+      transition: color 0.2s;
+    }
+
+    .utility-links a:hover {
+      color: #ffffff;
+    }
+
+    /* ==========================================================================
+       HEADER & NAVIGATION
+       ========================================================================== */
+    header {
+      background: #ffffff;
+      border-bottom: 1px solid var(--border-light);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.02);
+    }
+
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 74px;
+      gap: 20px;
+    }
+
+    .brand-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+
+    .brand-logo-img {
+      height: 46px;
+      width: auto;
+      object-fit: contain;
+    }
+
+    .nav-tabs {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      list-style: none;
+    }
+
+    .nav-tabs a {
+      font-size: 13.5px;
+      font-weight: 600;
+      color: var(--text-body);
+      padding: 8px 14px;
+      border-radius: var(--radius-md);
+      transition: var(--transition);
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .nav-tabs a:hover {
+      color: var(--hl-forest);
+      background: var(--hl-brand-tint);
+    }
+
+    .nav-tabs a.active {
+      color: var(--hl-forest);
+      background: var(--hl-brand-tint);
+      font-weight: 700;
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .btn-circle-action {
+      width: 40px;
+      height: 40px;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-main);
+      background: #ffffff;
+      position: relative;
+      transition: var(--transition);
+    }
+
+    .btn-circle-action:hover {
+      background: var(--bg-page);
+      border-color: var(--border-hover);
+      color: var(--hl-forest);
+    }
+
+    .pill-count {
+      position: absolute;
+      top: -5px;
+      right: -5px;
+      background: var(--hl-brand);
+      color: #ffffff;
+      font-size: 10.5px;
+      font-weight: 700;
+      min-width: 18px;
+      height: 18px;
+      border-radius: var(--radius-full);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 4px;
+      border: 2px solid #ffffff;
+    }
+
+    .btn-quick-catalog {
+      background: var(--hl-brand-tint);
+      color: var(--hl-forest);
+      border: 1px solid var(--hl-brand-border);
+      padding: 8px 16px;
+      border-radius: var(--radius-md);
+      font-size: 13px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: var(--transition);
+    }
+
+    .btn-quick-catalog:hover {
+      background: var(--hl-forest);
+      color: #ffffff;
+      border-color: var(--hl-forest);
+    }
+
+    .mobile-hamburger {
+      display: none;
+    }
+
+    /* ==========================================================================
+       HERO BANNER
+       ========================================================================== */
+    .hero-banner {
+      background: linear-gradient(180deg, #ffffff 0%, var(--bg-page) 100%);
+      padding: 48px 0 60px;
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .hero-text {
+      max-width: 600px;
+    }
+
+    .fssai-indicator {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #f0fdf4;
+      border: 1px solid #bbf7d0;
+      padding: 4px 12px;
+      border-radius: var(--radius-full);
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--hl-forest);
+      margin-bottom: 18px;
+    }
+
+    .hero-text h1 {
+      font-size: clamp(30px, 4vw, 42px);
+      margin-bottom: 16px;
+      color: var(--text-main);
+    }
+
+    .hero-text h1 .highlight {
+      color: var(--hl-forest);
+      position: relative;
+    }
+
+    .hero-text p {
+      font-size: 15.5px;
+      color: var(--text-muted);
+      margin-bottom: 24px;
+      line-height: 1.6;
+    }
+
+    .hero-action-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 32px;
+    }
+
+    .hero-stats-row {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border-light);
+    }
+
+    .hero-stat b {
+      display: block;
+      font-size: 18px;
+      font-weight: 800;
+      color: var(--text-main);
+    }
+
+    .hero-stat span {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    .hero-visual-card {
+      position: relative;
+    }
+
+    .hero-main-card {
+      background: #ffffff;
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border-light);
+      box-shadow: var(--shadow-card);
+      overflow: hidden;
+    }
+
+    .hero-main-card img {
+      width: 100%;
+      height: 290px;
+      object-fit: cover;
+    }
+
+    .hero-card-meta {
+      padding: 16px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid var(--border-light);
+    }
+
+    .hero-card-title h3 {
+      font-size: 15px;
+      margin-bottom: 2px;
+    }
+
+    .hero-card-title span {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    .floating-card-badge {
+      position: absolute;
+      background: #ffffff;
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-md);
+      padding: 10px 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: var(--shadow-hover);
+      z-index: 2;
+    }
+
+    .badge-iso {
+      top: -12px;
+      right: -12px;
+    }
+
+    .badge-fssai {
+      bottom: -12px;
+      left: -12px;
+    }
+
+    .badge-icon-sq {
+      width: 34px;
+      height: 34px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .badge-txt strong {
+      display: block;
+      font-size: 12px;
+      color: var(--text-main);
+    }
+
+    .badge-txt small {
+      font-size: 10.5px;
+      color: var(--text-muted);
+    }
+
+    /* ==========================================================================
+       TRUST VALUES BAR
+       ========================================================================== */
+    .trust-bar {
+      background: #ffffff;
+      border-bottom: 1px solid var(--border-light);
+      padding: 24px 0;
+    }
+
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .trust-pillar {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .pillar-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: var(--radius-md);
+      background: var(--hl-brand-tint);
+      color: var(--hl-forest);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .pillar-info h4 {
+      font-size: 13.5px;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 2px;
+    }
+
+    .pillar-info p {
+      font-size: 12px;
+      color: var(--text-muted);
+      line-height: 1.35;
+    }
+
+    /* ==========================================================================
+       CATEGORY TILES (SPORTS NUTRITION)
+       ========================================================================== */
+    .category-tiles-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 14px;
+    }
+
+    .cat-tile {
+      background: #ffffff;
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      cursor: pointer;
+      transition: var(--transition);
+      position: relative;
+    }
+
+    .cat-tile:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-hover);
+      border-color: var(--hl-forest);
+    }
+
+    .cat-tile img {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .cat-tile:hover img {
+      transform: scale(1.05);
+    }
+
+    .cat-icon-container {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: rgba(255, 255, 255, 0.95);
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--hl-forest);
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+    }
+
+    .cat-tile-meta {
+      padding: 12px 14px;
+    }
+
+    .cat-tile-meta h3 {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 2px;
+    }
+
+    .cat-tile-meta span {
+      font-size: 11.5px;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    /* ==========================================================================
+       CATALOG TOOLBAR & FILTERS
+       ========================================================================== */
+    .catalog-section {
+      background: #ffffff;
+      border-top: 1px solid var(--border-light);
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .toolbar-filter-box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 28px;
+      padding-bottom: 18px;
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .category-pills-wrap {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .cat-pill-btn {
+      padding: 7px 14px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-body);
+      background: var(--bg-page);
+      border: 1px solid var(--border-light);
+      transition: var(--transition);
+    }
+
+    .cat-pill-btn:hover {
+      background: var(--hl-brand-tint);
+      color: var(--hl-forest);
+      border-color: var(--hl-brand-border);
+    }
+
+    .cat-pill-btn.active {
+      background: var(--hl-forest);
+      color: #ffffff;
+      border-color: var(--hl-forest);
+    }
+
+    .search-sort-cluster {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .search-bar-wrap {
+      position: relative;
+      min-width: 240px;
+    }
+
+    .search-bar-wrap svg {
+      position: absolute;
+      left: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-subtle);
+      pointer-events: none;
+    }
+
+    .search-bar-wrap input {
+      width: 100%;
+      padding: 8px 12px 8px 36px;
+      border-radius: 8px;
+      border: 1px solid var(--border-light);
+      background: #ffffff;
+      font-size: 13px;
+      color: var(--text-main);
+      outline: none;
+      transition: var(--transition);
+    }
+
+    .search-bar-wrap input:focus {
+      border-color: var(--hl-forest);
+      box-shadow: 0 0 0 3px rgba(15, 81, 50, 0.1);
+    }
+
+    .sort-menu {
+      padding: 8px 14px;
+      border-radius: 8px;
+      border: 1px solid var(--border-light);
+      background: #ffffff;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-body);
+      cursor: pointer;
+      outline: none;
+    }
+
+    /* ==========================================================================
+       PRODUCT CARDS
+       ========================================================================== */
+    .products-grid-layout {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .hl-product-card {
+      background: var(--card-bg);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border-light);
+      box-shadow: var(--shadow-card);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: var(--transition);
+      position: relative;
+    }
+
+    .hl-product-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-hover);
+      border-color: var(--border-hover);
+    }
+
+    .product-img-box {
+      position: relative;
+      height: 220px;
+      background: #f8fafc;
+      overflow: hidden;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .product-img-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .hl-product-card:hover .product-img-box img {
+      transform: scale(1.05);
+    }
+
+    .sku-badge {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      padding: 3px 9px;
+      border-radius: var(--radius-full);
+      font-size: 10.5px;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      z-index: 2;
+    }
+
+    .badge-bestseller {
+      background: #f0fdf4;
+      color: #166534;
+      border: 1px solid #bbf7d0;
+    }
+
+    .badge-ayurveda {
+      background: #fefce8;
+      color: #854d0e;
+      border: 1px solid #fef08a;
+    }
+
+    .badge-sport {
+      background: #f0fdfa;
+      color: #0f766e;
+      border: 1px solid #99f6e4;
+    }
+
+    .badge-energy {
+      background: #fffbeb;
+      color: #92400e;
+      border: 1px solid #fde68a;
+    }
+
+    .heart-fav-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.95);
+      border: 1px solid var(--border-light);
+      color: var(--text-subtle);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 2;
+      transition: var(--transition);
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+    }
+
+    .heart-fav-btn:hover {
+      color: #e11d48;
+      background: #ffffff;
+      border-color: #fecdd3;
+      transform: scale(1.08);
+    }
+
+    .heart-fav-btn.active {
+      color: #e11d48;
+      background: #fff1f2;
+      border-color: #fda4af;
+    }
+
+    .heart-fav-btn.active svg {
+      fill: #e11d48;
+      stroke: #e11d48;
+    }
+
+    .quick-view-hover {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%) translateY(8px);
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(8px);
+      color: var(--text-main);
+      border: 1px solid var(--border-light);
+      padding: 7px 14px;
+      border-radius: var(--radius-full);
+      font-size: 11.5px;
+      font-weight: 600;
+      box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
+      opacity: 0;
+      pointer-events: none;
+      transition: all var(--transition);
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      white-space: nowrap;
+      z-index: 3;
+    }
+
+    .hl-product-card:hover .quick-view-hover {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+      pointer-events: auto;
+    }
+
+    .quick-view-hover:hover {
+      background: var(--hl-forest);
+      color: #ffffff;
+      border-color: var(--hl-forest);
+    }
+
+    .product-info-block {
+      padding: 16px 16px 18px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .category-label {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--hl-brand);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 4px;
+    }
+
+    .product-title-text {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 5px;
+      line-height: 1.35;
+    }
+
+    .product-summary-text {
+      font-size: 12.5px;
+      color: var(--text-muted);
+      line-height: 1.45;
+      margin-bottom: 10px;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .tag-features-row {
+      display: flex;
+      gap: 6px;
+      margin-bottom: 10px;
+      flex-wrap: wrap;
+    }
+
+    .tag-feature-pill {
+      font-size: 11px;
+      font-weight: 600;
+      background: #f1f5f9;
+      color: #475569;
+      padding: 2.5px 7px;
+      border-radius: 5px;
+      border: 1px solid var(--border-light);
+    }
+
+    .stars-rating-wrap {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 12px;
+      margin-bottom: 12px;
+    }
+
+    .stars-cluster {
+      display: flex;
+      gap: 1.5px;
+    }
+
+    .stars-cluster svg {
+      width: 13px;
+      height: 13px;
+      fill: var(--hl-gold);
+      stroke: var(--hl-gold);
+    }
+
+    .rating-val {
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .review-num {
+      color: var(--text-subtle);
+      font-size: 11px;
+    }
+
+    .card-footer-action {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: auto;
+      padding-top: 12px;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .mrp-price-block {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .mrp-notice {
+      font-size: 9.5px;
+      color: var(--text-subtle);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .price-value {
+      font-size: 18.5px;
+      font-weight: 800;
+      color: var(--text-main);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      letter-spacing: -0.01em;
+    }
+
+    .old-mrp {
+      font-size: 11.5px;
+      color: var(--text-subtle);
+      text-decoration: line-through;
+      margin-left: 5px;
+      font-weight: 500;
+    }
+
+    .btn-add-bag {
+      background: var(--hl-forest);
+      color: #ffffff;
+      padding: 8px 15px;
+      border-radius: 8px;
+      font-size: 12.5px;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      border: 1px solid var(--hl-forest);
+      transition: var(--transition);
+    }
+
+    .btn-add-bag:hover {
+      background: var(--hl-brand-hover);
+      border-color: var(--hl-brand-hover);
+      transform: translateY(-1px);
+    }
+
+    /* ==========================================================================
+       HERBALIFE QUALITY STANDARD (SEED TO FEED)
+       ========================================================================== */
+    .quality-standard-sec {
+      background: #f8fafc;
+      border-top: 1px solid var(--border-light);
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .quality-grid-2col {
+      display: grid;
+      grid-template-columns: 1fr 1.15fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    .quality-dual-photos {
+      position: relative;
+    }
+
+    .img-offset-1 {
+      width: 78%;
+      height: 310px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: var(--shadow-card);
+    }
+
+    .img-offset-2 {
+      position: absolute;
+      width: 58%;
+      height: 230px;
+      object-fit: cover;
+      bottom: -24px;
+      right: 0;
+      border-radius: 12px;
+      border: 4px solid #ffffff;
+      box-shadow: var(--shadow-hover);
+    }
+
+    .callout-quality-badge {
+      position: absolute;
+      bottom: 24px;
+      left: -12px;
+      background: #ffffff;
+      border: 1px solid var(--border-light);
+      border-radius: 10px;
+      padding: 10px 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: var(--shadow-hover);
+      max-width: 250px;
+      z-index: 3;
+    }
+
+    .callout-icon-circle {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      background: var(--hl-brand-tint);
+      color: var(--hl-forest);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .callout-txt b {
+      display: block;
+      font-size: 12px;
+      color: var(--text-main);
+    }
+
+    .callout-txt small {
+      font-size: 10.5px;
+      color: var(--text-muted);
+    }
+
+    .quality-content h2 {
+      font-size: clamp(26px, 3vw, 36px);
+      margin-bottom: 14px;
+    }
+
+    .quality-content p {
+      font-size: 15px;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 22px;
+    }
+
+    .features-list-quality {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-bottom: 26px;
+    }
+
+    .feature-item-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+    }
+
+    .check-circle-green {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: var(--hl-brand-tint);
+      color: var(--hl-forest);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .feature-item-row h4 {
+      font-size: 14.5px;
+      color: var(--text-main);
+      margin-bottom: 2px;
+    }
+
+    .feature-item-row p {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin: 0;
+      line-height: 1.45;
+    }
+
+    /* ==========================================================================
+       CUSTOMER REVIEWS
+       ========================================================================== */
+    .transformations-sec {
+      background: #ffffff;
+    }
+
+    .testimonials-grid-3col {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .story-card {
+      background: var(--bg-page);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .story-quote {
+      font-size: 14px;
+      color: var(--text-body);
+      line-height: 1.6;
+      margin: 12px 0 20px;
+      font-style: italic;
+    }
+
+    .user-profile-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .user-avatar-img {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .user-name-meta b {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 13.5px;
+      color: var(--text-main);
+    }
+
+    .user-name-meta b svg {
+      width: 14px;
+      height: 14px;
+      color: var(--hl-brand);
+    }
+
+    .user-name-meta small {
+      font-size: 11.5px;
+      color: var(--text-muted);
+    }
+
+    /* ==========================================================================
+       VIP WELLNESS CLUB BANNER
+       ========================================================================== */
+    .vip-banner-wrap {
+      background: linear-gradient(135deg, var(--hl-forest) 0%, var(--hl-forest-dark) 100%);
+      border-radius: var(--radius-lg);
+      padding: 44px 36px;
+      text-align: center;
+      color: #ffffff;
+      box-shadow: var(--shadow-card);
+    }
+
+    .vip-banner-wrap h2 {
+      color: #ffffff;
+      font-size: 28px;
+      margin-bottom: 8px;
+    }
+
+    .vip-banner-wrap p {
+      color: #e2e8f0;
+      max-width: 500px;
+      margin: 0 auto 24px;
+      font-size: 14.5px;
+    }
+
+    .vip-subscribe-form {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      max-width: 460px;
+      margin: 0 auto;
+    }
+
+    .vip-subscribe-form input {
+      flex: 1;
+      padding: 11px 16px;
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      background: rgba(255, 255, 255, 0.95);
+      font-size: 13.5px;
+      color: var(--text-main);
+      outline: none;
+    }
+
+    .vip-subscribe-form button {
+      background: #ffffff;
+      color: var(--hl-forest);
+      padding: 11px 20px;
+      border-radius: 8px;
+      font-size: 13.5px;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: var(--transition);
+    }
+
+    .vip-subscribe-form button:hover {
+      background: #f1f5f9;
+      transform: translateY(-1px);
+    }
+
+    /* ==========================================================================
+       FOOTER
+       ========================================================================== */
+    footer {
+      background: var(--hl-forest-deep);
+      color: #cbd5e1;
+      padding: 60px 0 30px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      font-size: 13.5px;
+    }
+
+    .footer-grid-4col {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr 1fr;
+      gap: 36px;
+      margin-bottom: 44px;
+    }
+
+    .footer-brand-info p {
+      font-size: 13px;
+      color: #94a3b8;
+      line-height: 1.6;
+      margin-bottom: 16px;
+    }
+
+    .social-icons-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .social-btn {
+      width: 34px;
+      height: 34px;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.06);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #cbd5e1;
+      transition: var(--transition);
+    }
+
+    .social-btn:hover {
+      background: var(--hl-brand);
+      color: #ffffff;
+    }
+
+    .footer-nav-col h4 {
+      color: #ffffff;
+      font-size: 14.5px;
+      margin-bottom: 14px;
+      font-weight: 700;
+    }
+
+    .footer-nav-col ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .footer-nav-col a {
+      color: #94a3b8;
+      font-size: 13px;
+    }
+
+    .footer-nav-col a:hover {
+      color: #ffffff;
+    }
+
+    .contact-item-line {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12.5px;
+      color: #94a3b8;
+      margin-bottom: 8px;
+    }
+
+    .footer-bottom-strip {
+      padding-top: 24px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 14px;
+      font-size: 12px;
+      color: #64748b;
+    }
+
+    .footer-bottom-strip a {
+      color: #94a3b8;
+    }
+
+    .footer-bottom-strip a:hover {
+      color: #ffffff;
+    }
+
+    .disclaimer-text {
+      margin-top: 18px;
+      font-size: 11.5px;
+      color: #64748b;
+      line-height: 1.6;
+    }
+
+    /* ==========================================================================
+       CART & WISHLIST DRAWERS
+       ========================================================================== */
+    .drawer-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(15, 23, 42, 0.45);
+      backdrop-filter: blur(4px);
+      z-index: 100;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.25s ease;
+    }
+
+    .drawer-overlay.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .slide-drawer {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      max-width: 420px;
+      background: #ffffff;
+      z-index: 101;
+      box-shadow: var(--shadow-drawer);
+      display: flex;
+      flex-direction: column;
+      transform: translateX(100%);
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .slide-drawer.active {
+      transform: translateX(0);
+    }
+
+    .drawer-top-header {
+      padding: 18px 22px;
+      border-bottom: 1px solid var(--border-light);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .drawer-top-header h3 {
+      font-size: 16px;
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .close-drawer-icon {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-muted);
+    }
+
+    .close-drawer-icon:hover {
+      background: #f1f5f9;
+      color: var(--text-main);
+    }
+
+    .shipping-progress-meter {
+      padding: 12px 22px;
+      background: var(--hl-brand-tint);
+      border-bottom: 1px solid var(--hl-brand-border);
+      font-size: 12px;
+      color: var(--hl-forest);
+    }
+
+    .meter-progress-track {
+      height: 5px;
+      background: #e2e8f0;
+      border-radius: 4px;
+      overflow: hidden;
+      margin-top: 6px;
+    }
+
+    .meter-progress-fill {
+      height: 100%;
+      background: var(--hl-forest);
+      width: 0%;
+      transition: width 0.3s ease;
+    }
+
+    .drawer-scroll-body {
+      flex: 1;
+      overflow-y: auto;
+      padding: 18px 22px;
+    }
+
+    .cart-item-card {
+      display: flex;
+      gap: 12px;
+      padding-bottom: 14px;
+      margin-bottom: 14px;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .cart-item-photo {
+      width: 68px;
+      height: 68px;
+      object-fit: cover;
+      border-radius: 8px;
+      border: 1px solid var(--border-light);
+    }
+
+    .cart-item-details {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .cart-item-title {
+      font-size: 13.5px;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 2px;
+      line-height: 1.3;
+    }
+
+    .cart-item-price-tag {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 6px;
+    }
+
+    .cart-qty-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: auto;
+    }
+
+    .qty-counter-box {
+      display: inline-flex;
+      align-items: center;
+      border: 1px solid var(--border-light);
+      border-radius: 6px;
+      overflow: hidden;
+    }
+
+    .qty-btn {
+      width: 26px;
+      height: 26px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text-body);
+      background: #f8fafc;
+    }
+
+    .qty-btn:hover {
+      background: #e2e8f0;
+    }
+
+    .qty-digit {
+      padding: 0 8px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .remove-action-btn {
+      font-size: 11.5px;
+      color: var(--text-subtle);
+      display: flex;
+      align-items: center;
+      gap: 3px;
+    }
+
+    .remove-action-btn:hover {
+      color: #ef4444;
+    }
+
+    .empty-cart-state {
+      text-align: center;
+      padding: 50px 10px;
+    }
+
+    .empty-icon-wrap {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: var(--bg-page);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 12px;
+      color: var(--text-subtle);
+    }
+
+    .drawer-fixed-footer {
+      padding: 18px 22px;
+      border-top: 1px solid var(--border-light);
+      background: #ffffff;
+    }
+
+    .promo-input-row {
+      display: flex;
+      gap: 6px;
+      margin-bottom: 14px;
+    }
+
+    .promo-input-row input {
+      flex: 1;
+      padding: 7px 12px;
+      border-radius: 6px;
+      border: 1px solid var(--border-light);
+      font-size: 12.5px;
+      text-transform: uppercase;
+      outline: none;
+    }
+
+    .promo-input-row button {
+      background: var(--bg-page);
+      border: 1px solid var(--border-light);
+      padding: 7px 12px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text-body);
+    }
+
+    .promo-input-row button:hover {
+      background: var(--hl-forest);
+      color: #ffffff;
+      border-color: var(--hl-forest);
+    }
+
+    .order-totals-breakdown {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-bottom: 14px;
+    }
+
+    .calc-row {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .calc-row.grand-total {
+      font-size: 16px;
+      font-weight: 800;
+      color: var(--text-main);
+      padding-top: 8px;
+      border-top: 1px dashed var(--border-light);
+    }
+
+    .btn-checkout-now {
+      width: 100%;
+      background: var(--hl-forest);
+      color: #ffffff;
+      padding: 12px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      transition: var(--transition);
+    }
+
+    .btn-checkout-now:hover {
+      background: var(--hl-brand-hover);
+    }
+
+    /* ==========================================================================
+       MODAL QUICK VIEW
+       ========================================================================== */
+    .quick-modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(15, 23, 42, 0.5);
+      backdrop-filter: blur(4px);
+      z-index: 110;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.25s ease;
+    }
+
+    .quick-modal-backdrop.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .modal-box-card {
+      background: #ffffff;
+      border-radius: var(--radius-lg);
+      max-width: 780px;
+      width: 100%;
+      box-shadow: var(--shadow-dropdown);
+      position: relative;
+      display: grid;
+      grid-template-columns: 1fr 1.15fr;
+      overflow: hidden;
+      max-height: 90vh;
+    }
+
+    .modal-close-x {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: #f1f5f9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-body);
+      z-index: 5;
+    }
+
+    .modal-close-x:hover {
+      background: #e2e8f0;
+    }
+
+    .modal-product-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      background: #f8fafc;
+    }
+
+    .modal-content-area {
+      padding: 28px 24px;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .flavor-select-container {
+      margin: 16px 0;
+    }
+
+    .flavor-select-container label {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text-main);
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .flavor-buttons-list {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .flavor-choice-btn {
+      padding: 5px 12px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 600;
+      background: var(--bg-page);
+      border: 1px solid var(--border-light);
+      color: var(--text-body);
+    }
+
+    .flavor-choice-btn:hover {
+      border-color: var(--hl-forest);
+    }
+
+    .flavor-choice-btn.active {
+      background: var(--hl-forest);
+      color: #ffffff;
+      border-color: var(--hl-forest);
+    }
+
+    .modal-specs-box {
+      background: var(--bg-page);
+      border: 1px solid var(--border-light);
+      border-radius: 8px;
+      padding: 12px 14px;
+      margin-bottom: 18px;
+      font-size: 12.5px;
+      color: var(--text-body);
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .spec-line {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .spec-line svg {
+      width: 14px;
+      height: 14px;
+      color: var(--hl-brand);
+      flex-shrink: 0;
+    }
+
+    .modal-bottom-actions {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      margin-top: auto;
+      padding-top: 14px;
+    }
+
+    .modal-stepper-box {
+      display: flex;
+      align-items: center;
+      border: 1px solid var(--border-light);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .modal-stepper-box .qty-btn {
+      width: 36px;
+      height: 40px;
+    }
+
+    .modal-stepper-box .qty-digit {
+      padding: 0 12px;
+      font-size: 14px;
+    }
+
+    /* ==========================================================================
+       CHECKOUT MODAL & PAYMENT GATEWAY INTEGRATION
+       ========================================================================== */
+    .checkout-modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(15, 23, 42, 0.7);
+      backdrop-filter: blur(6px);
+      z-index: 150;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.25s ease;
+    }
+
+    .checkout-modal-backdrop.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .checkout-card {
+      background: #ffffff;
+      border-radius: 16px;
+      max-width: 680px;
+      width: 100%;
+      max-height: 92vh;
+      overflow-y: auto;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+      position: relative;
+    }
+
+    .checkout-header {
+      padding: 18px 24px;
+      border-bottom: 1px solid var(--border-light);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #f8fafc;
+      border-radius: 16px 16px 0 0;
+    }
+
+    .checkout-header h3 {
+      font-size: 17px;
+      font-weight: 800;
+      color: #0f172a;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .checkout-body {
+      padding: 22px 24px;
+    }
+
+    .form-group-checkout {
+      margin-bottom: 14px;
+    }
+
+    .form-group-checkout label {
+      display: block;
+      font-size: 12.5px;
+      font-weight: 700;
+      color: #334155;
+      margin-bottom: 5px;
+    }
+
+    .form-group-checkout input, .form-group-checkout textarea, .form-group-checkout select {
+      width: 100%;
+      padding: 9px 13px;
+      border-radius: 8px;
+      border: 1px solid var(--border-light);
+      font-family: inherit;
+      font-size: 13.5px;
+      transition: border-color 0.2s ease;
+    }
+
+    .form-group-checkout input:focus, .form-group-checkout textarea:focus, .form-group-checkout select:focus {
+      outline: none;
+      border-color: #15803d;
+      box-shadow: 0 0 0 3px rgba(21, 128, 61, 0.1);
+    }
+
+    .form-row-2col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    /* Modern Payment Selection Tabs */
+    .payment-section-box {
+      background: #ffffff;
+      border: 1px solid var(--border-light);
+      border-radius: 12px;
+      padding: 14px;
+      margin: 16px 0;
+    }
+
+    .payment-tabs-nav {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 6px;
+      background: #f1f5f9;
+      padding: 4px;
+      border-radius: 10px;
+      margin-bottom: 14px;
+    }
+
+    .pay-tab-btn {
+      padding: 8px 4px;
+      font-size: 12px;
+      font-weight: 700;
+      border-radius: 7px;
+      text-align: center;
+      color: #64748b;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+      transition: all 0.2s ease;
+    }
+
+    .pay-tab-btn svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    .pay-tab-btn:hover {
+      color: var(--hl-forest);
+    }
+
+    .pay-tab-btn.active {
+      background: #ffffff;
+      color: var(--hl-forest);
+      box-shadow: 0 2px 5px rgba(0,0,0,0.06);
+    }
+
+    .pay-tab-pane {
+      display: none;
+      padding: 10px 4px;
+      animation: fadeIn 0.2s ease;
+    }
+
+    .pay-tab-pane.active {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(4px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* UPI QR Display */
+    .upi-qr-card {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      background: #f8fafc;
+      border: 1px dashed #cbd5e1;
+      border-radius: 10px;
+      padding: 12px 14px;
+      margin-bottom: 12px;
+    }
+
+    .qr-svg-box {
+      width: 90px;
+      height: 90px;
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      padding: 4px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+    }
+
+    .upi-apps-icons {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 6px;
+      flex-wrap: wrap;
+    }
+
+    .upi-badge-chip {
+      font-size: 10.5px;
+      font-weight: 700;
+      padding: 2px 7px;
+      border-radius: 4px;
+      background: #e2e8f0;
+      color: #334155;
+    }
+
+    .btn-simulate-pay {
+      background: #15803d;
+      color: #ffffff;
+      font-size: 11.5px;
+      font-weight: 700;
+      padding: 6px 12px;
+      border-radius: 6px;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      margin-top: 8px;
+      transition: background 0.2s;
+    }
+
+    .btn-simulate-pay:hover {
+      background: #166534;
+    }
+
+    /* Netbanking Grid */
+    .banks-grid-3col {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      margin-bottom: 10px;
+    }
+
+    .bank-pill-btn {
+      border: 1px solid var(--border-light);
+      border-radius: 8px;
+      padding: 8px;
+      font-size: 11.5px;
+      font-weight: 700;
+      text-align: center;
+      background: #f8fafc;
+      color: var(--text-main);
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .bank-pill-btn:hover, .bank-pill-btn.active {
+      border-color: #15803d;
+      background: #f0fdf4;
+      color: #15803d;
+    }
+
+    .gateway-security-strip {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px 12px;
+      background: #f8fafc;
+      border-radius: 8px;
+      font-size: 11.5px;
+      color: #64748b;
+      margin-top: 10px;
+      border: 1px solid var(--border-light);
+    }
+
+    .gateway-security-strip span {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .checkout-order-summary {
+      background: #f8fafc;
+      border-radius: 12px;
+      padding: 14px 16px;
+      margin-top: 14px;
+      border: 1px solid var(--border-light);
+    }
+
+    .summary-line {
+      display: flex;
+      justify-content: space-between;
+      font-size: 13px;
+      color: #64748b;
+      margin-bottom: 5px;
+    }
+
+    .summary-line.total {
+      font-size: 16px;
+      font-weight: 800;
+      color: #0f172a;
+      border-top: 1px dashed var(--border-light);
+      padding-top: 8px;
+      margin-top: 8px;
+    }
+
+    /* Razorpay / Gateway Simulation Processing Overlay */
+    .rzp-gateway-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(15, 23, 42, 0.85);
+      backdrop-filter: blur(8px);
+      z-index: 250;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.25s ease;
+    }
+
+    .rzp-gateway-overlay.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .rzp-gateway-box {
+      background: #ffffff;
+      border-radius: 16px;
+      max-width: 440px;
+      width: 100%;
+      overflow: hidden;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.4);
+      animation: popIn 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    @keyframes popIn {
+      from { transform: scale(0.9); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    .rzp-top-header {
+      background: #0c2340;
+      color: #ffffff;
+      padding: 18px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .rzp-brand-tag {
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .rzp-body-content {
+      padding: 28px 24px;
+      text-align: center;
+    }
+
+    .rzp-spinner {
+      width: 48px;
+      height: 48px;
+      border: 4px solid #e2e8f0;
+      border-top-color: #2563eb;
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+      margin: 0 auto 18px;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    .success-celebrate-box {
+      text-align: center;
+      padding: 32px 16px;
+    }
+
+    .success-icon-badge {
+      width: 64px;
+      height: 64px;
+      background: #dcfce7;
+      color: #15803d;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 16px;
+    }
+
+    /* Printable Tax Invoice Modal */
+    .invoice-modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(15, 23, 42, 0.75);
+      backdrop-filter: blur(6px);
+      z-index: 200;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.25s ease;
+    }
+
+    .invoice-modal-backdrop.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .invoice-paper-card {
+      background: #ffffff;
+      border-radius: 12px;
+      max-width: 680px;
+      width: 100%;
+      max-height: 90vh;
+      overflow-y: auto;
+      padding: 32px;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.3);
+      position: relative;
+      font-size: 13px;
+    }
+
+    /* Toast Notification */
+    .toast-notification {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%) translateY(80px);
+      background: #0f172a;
+      color: #ffffff;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: var(--shadow-dropdown);
+      z-index: 300;
+      opacity: 0;
+      transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .toast-notification.show {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+    }
+
+    .toast-notification svg {
+      width: 16px;
+      height: 16px;
+      color: #4ade80;
+    }
+
+    /* Responsive Breakpoints */
+    @media (max-width: 1024px) {
+      .products-grid-layout {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .category-tiles-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .footer-grid-4col {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-tabs {
+        display: none;
+      }
+      .nav-tabs.mobile-active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 74px;
+        left: 0;
+        right: 0;
+        background: #ffffff;
+        border-bottom: 1px solid var(--border-light);
+        padding: 16px 24px;
+        box-shadow: var(--shadow-dropdown);
+      }
+      .mobile-hamburger {
+        display: flex;
+      }
+      .hero-grid {
+        grid-template-columns: 1fr;
+      }
+      .trust-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .category-tiles-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .products-grid-layout {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+      }
+      .quality-grid-2col {
+        grid-template-columns: 1fr;
+      }
+      .testimonials-grid-3col {
+        grid-template-columns: 1fr;
+      }
+      .modal-box-card {
+        grid-template-columns: 1fr;
+        max-height: 85vh;
+      }
+      .modal-product-img {
+        height: 200px;
+      }
+      .payment-tabs-nav {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 520px) {
+      .products-grid-layout {
+        grid-template-columns: 1fr;
+      }
+      .trust-grid {
+        grid-template-columns: 1fr;
+      }
+      .footer-grid-4col {
+        grid-template-columns: 1fr;
+      }
+      .form-row-2col {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- TOP UTILITY ANNOUNCEMENT BAR -->
+  <div class="top-utility-bar">
+    <div class="container top-utility-inner">
+      <div>
+        <span class="utility-badge">Authentic Stock</span>
+        <span>100% Genuine Herbalife Nutrition India • Official MRP Pricing • Free Pan-India Delivery on ₹2,500+</span>
+      </div>
+      <div class="utility-links">
+        <a href="#quality">Seed-to-Feed Guarantee</a>
+        <a href="#catalog">Use Code: <strong>RSWELL10</strong> for 10% Off</a>
+        <a href="http://localhost:5173/" target="_blank" class="btn-admin-portal" title="Open Admin Backoffice Dashboard">
+          <span class="live-dot"></span>
+          <span>Admin Portal</span>
+          <svg style="width:12px;height:12px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container header-content">
+      <a href="#" class="brand-group" aria-label="RS Wellness Home">
+        <img src="logo.png" alt="RS Wellness — Authentic Nutrition" class="brand-logo-img">
+      </a>
+
+      <ul class="nav-tabs" id="navTabs">
+        <li><a href="#catalog" class="active" onclick="closeMobileNav()">All Products</a></li>
+        <li><a href="#catalog" onclick="filterBy('Shakes')">Shakes</a></li>
+        <li><a href="#catalog" onclick="filterBy('Teas & Beverages')">Teas & Beverages</a></li>
+        <li><a href="#catalog" onclick="filterBy('Sports Nutrition')">Sports Nutrition</a></li>
+        <li><a href="#catalog" onclick="filterBy('Targeted Health')">Targeted Health</a></li>
+        <li><a href="#quality" onclick="closeMobileNav()">Quality Assurance</a></li>
+      </ul>
+
+      <div class="header-actions">
+        <button class="btn-circle-action" onclick="focusSearchInput()" aria-label="Search Catalog" title="Search">
+          <svg class="icon" viewBox="0 0 24 24">
+            <circle cx="11" cy="11" r="8" />
+            <line x1="21" y1="21" x2="16.65" y2="16.65" />
+          </svg>
+        </button>
+
+        <button class="btn-circle-action" onclick="toggleWishlistDrawer()" aria-label="Saved Favourites" title="Favourites">
+          <svg class="icon" viewBox="0 0 24 24">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+          </svg>
+          <span class="pill-count" id="wishlistCount">0</span>
+        </button>
+
+        <button class="btn-circle-action" onclick="toggleCartDrawer()" aria-label="Shopping Bag" title="Shopping Bag">
+          <svg class="icon" viewBox="0 0 24 24">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
+            <line x1="3" y1="6" x2="21" y2="6" />
+            <path d="M16 10a4 4 0 0 1-8 0" />
+          </svg>
+          <span class="pill-count" id="cartCount">0</span>
+        </button>
+
+        <a href="#catalog" class="btn-quick-catalog">
+          <span>Shop Catalog</span>
+        </a>
+
+        <button class="btn-circle-action mobile-hamburger" onclick="toggleMobileNav()" aria-label="Toggle Navigation">
+          <svg class="icon" viewBox="0 0 24 24">
+            <line x1="3" y1="12" x2="21" y2="12" />
+            <line x1="3" y1="6" x2="21" y2="6" />
+            <line x1="3" y1="18" x2="21" y2="18" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO BANNER -->
+  <section class="hero-banner">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <div class="fssai-indicator">
+          <svg class="icon" style="width:15px;height:15px;color:#15803d" viewBox="0 0 24 24">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+          </svg>
+          <span>100% Genuine Sealed Stock • Official FSSAI Compliance</span>
+        </div>
+
+        <h1>Direct Authentic Nutrition <br><span class="highlight">Delivered Pan-India</span></h1>
+        <p>Buy original Herbalife Formula 1 Shakes, Afresh Energy drinks, and active wellness essentials with official tamper-evident seals and guaranteed fresh batch expiry dates.</p>
+
+        <div class="hero-action-row">
+          <a href="#catalog" class="btn btn-primary">
+            <span>Explore All Products</span>
+            <svg class="icon" viewBox="0 0 24 24">
+              <line x1="5" y1="12" x2="19" y2="12" />
+              <polyline points="12 5 19 12 12 19" />
+            </svg>
+          </a>
+          <a href="#categories" class="btn btn-secondary">Browse by Category</a>
+        </div>
+
+        <div class="hero-stats-row">
+          <div class="hero-stat">
+            <b>100% Genuine</b>
+            <span>Direct Official Batches</span>
+          </div>
+          <div class="hero-stat">
+            <b>50,000+</b>
+            <span>Orders Dispatched</span>
+          </div>
+          <div class="hero-stat">
+            <b>4.9 ★ Rating</b>
+            <span>Verified Customer Reviews</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual-card">
+        <div class="floating-card-badge badge-iso">
+          <div class="badge-icon-sq" style="background:#ecfdf5;color:#15803d">
+            <svg class="icon" viewBox="0 0 24 24">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+              <polyline points="22 4 12 14.01 9 11.01" />
+            </svg>
+          </div>
+          <div class="badge-txt">
+            <strong>Seed to Feed Guarantee</strong>
+            <small>14-Point Laboratory Verified</small>
+          </div>
+        </div>
+
+        <div class="hero-main-card">
+          <img src="https://images.unsplash.com/photo-1553530666-ba11a7da3888?auto=format&fit=crop&w=700&q=80"
+            alt="Herbalife Formula 1 Shake" loading="eager">
+          <div class="hero-card-meta">
+            <div class="hero-card-title">
+              <h3>Formula 1 Nutritional Shake</h3>
+              <span>Signature Kulfi & Paan Flavors • 500g</span>
+            </div>
+            <button class="btn-add-bag" onclick="addToBagItem(1)">
+              <span>Add ₹2,385</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="floating-card-badge badge-fssai">
+          <div class="badge-icon-sq" style="background:#fefce8;color:#854d0e">
+            <svg class="icon" viewBox="0 0 24 24">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+            </svg>
+          </div>
+          <div class="badge-txt">
+            <strong>Free Shaker Cup</strong>
+            <small>Included on orders over ₹3,500</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST VALUES BAR -->
+  <div class="trust-bar">
+    <div class="container trust-grid">
+      <div class="trust-pillar">
+        <div class="pillar-icon">
+          <svg class="icon" style="width:22px;height:22px" viewBox="0 0 24 24">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+          </svg>
+        </div>
+        <div class="pillar-info">
+          <h4>100% Genuine Sealed</h4>
+          <p>Factory-sealed direct stock with authentic batch barcodes</p>
+        </div>
+      </div>
+
+      <div class="trust-pillar">
+        <div class="pillar-icon">
+          <svg class="icon" style="width:22px;height:22px" viewBox="0 0 24 24">
+            <rect x="1" y="3" width="15" height="13" />
+            <polygon points="16 8 20 8 23 11 23 16 16 16 16 8" />
+            <circle cx="5.5" cy="18.5" r="2.5" />
+            <circle cx="18.5" cy="18.5" r="2.5" />
+          </svg>
+        </div>
+        <div class="pillar-info">
+          <h4>Pan-India Delivery</h4>
+          <p>Free courier shipping on orders over ₹2,500</p>
+        </div>
+      </div>
+
+      <div class="trust-pillar">
+        <div class="pillar-icon">
+          <svg class="icon" style="width:22px;height:22px" viewBox="0 0 24 24">
+            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+          </svg>
+        </div>
+        <div class="pillar-info">
+          <h4>Fresh Batch Stock</h4>
+          <p>Verified long expiry dates & tamper-proof foil seals</p>
+        </div>
+      </div>
+
+      <div class="trust-pillar">
+        <div class="pillar-icon">
+          <svg class="icon" style="width:22px;height:22px" viewBox="0 0 24 24">
+            <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8" />
+            <path d="M21 3v5h-5" />
+            <path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16" />
+            <path d="M8 16H3v5" />
+          </svg>
+        </div>
+        <div class="pillar-info">
+          <h4>30-Day Money Back</h4>
+          <p>Customer satisfaction guarantee on all products</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CATEGORY TILES (SPORTS NUTRITION) -->
+  <section id="categories">
+    <div class="container">
+      <div class="section-headline">
+        <span class="section-eyebrow">Explore Collections</span>
+        <h2>Shop by Nutrition Category</h2>
+        <p>Browse Formula 1 meal shakes, refreshing energy drinks, sports recovery, or Ayurvedic daily wellness.</p>
+      </div>
+
+      <div class="category-tiles-grid" id="categoryTiles">
+        <!-- Dynamically rendered -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ALL PRODUCTS CATALOG (WITH LIVE MRP IN ₹ AND FILTERS) -->
+  <section class="catalog-section" id="catalog">
+    <div class="container">
+      <div class="section-headline">
+        <span class="section-eyebrow">Full Inventory</span>
+        <h2>All Herbalife Nutrition Products</h2>
+        <p>Showing authentic Indian portfolio with official MRP (incl. of all taxes) and all available flavor options.</p>
+      </div>
+
+      <!-- Toolbar with Category Filters, Search, and Sort -->
+      <div class="toolbar-filter-box">
+        <div class="category-pills-wrap" id="categoryPills">
+          <!-- Dynamically populated -->
+        </div>
+
+        <div class="search-sort-cluster">
+          <div class="search-bar-wrap">
+            <svg class="icon" viewBox="0 0 24 24">
+              <circle cx="11" cy="11" r="8" />
+              <line x1="21" y1="21" x2="16.65" y2="16.65" />
+            </svg>
+            <input type="text" id="searchInput" placeholder="Search Shakes, Afresh, Protein..."
+              oninput="handleSearchInput(this.value)">
+          </div>
+
+          <select class="sort-menu" id="sortSelect" onchange="handleSortChange(this.value)" aria-label="Sort by">
+            <option value="featured">Featured Products</option>
+            <option value="price-asc">Price: Low to High</option>
+            <option value="price-desc">Price: High to Low</option>
+            <option value="rating">Top Rated by Customers</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="products-grid-layout" id="productsGrid">
+        <!-- Rendered dynamically -->
+      </div>
+    </div>
+  </section>
+
+  <!-- SEED TO FEED QUALITY STANDARD BANNER -->
+  <section class="quality-standard-sec" id="quality">
+    <div class="container">
+      <div class="quality-grid-2col">
+        <div class="quality-dual-photos">
+          <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=600&q=80"
+            alt="Herbalife athletic fitness" class="img-offset-1" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=600&q=80"
+            alt="Herbalife quality laboratory inspection" class="img-offset-2" loading="lazy">
+
+          <div class="callout-quality-badge">
+            <div class="callout-icon-circle">
+              <svg class="icon" viewBox="0 0 24 24">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg>
+            </div>
+            <div class="callout-txt">
+              <b>Herbalife Seed to Feed Quality</b>
+              <small>Tested through 14 stringent purity checkpoints</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="quality-content">
+          <span class="section-eyebrow">Purity & Science</span>
+          <h2>The Herbalife Quality Guarantee</h2>
+          <p>Every product ordered from RS Wellness is 100% genuine and sourced directly from official Herbalife warehouses in India. We guarantee pristine packaging, verified long expiry dates, and authentic batch barcodes.</p>
+
+          <div class="features-list-quality">
+            <div class="feature-item-row">
+              <div class="check-circle-green">
+                <svg class="icon" viewBox="0 0 24 24">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+              </div>
+              <div>
+                <h4>Direct Factory-Sealed Stock</h4>
+                <p>Every canister of Formula 1 and Afresh features the original security inner foil seal and tamper-evident outer band.</p>
+              </div>
+            </div>
+
+            <div class="feature-item-row">
+              <div class="check-circle-green">
+                <svg class="icon" viewBox="0 0 24 24">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+              </div>
+              <div>
+                <h4>14-Point Laboratory Testing</h4>
+                <p>Herbalife invests over $300M in scientific laboratories and testing protocols to ensure maximum nutrient potency.</p>
+              </div>
+            </div>
+
+            <div class="feature-item-row">
+              <div class="check-circle-green">
+                <svg class="icon" viewBox="0 0 24 24">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+              </div>
+              <div>
+                <h4>Pan-India Express Delivery</h4>
+                <p>Orders are dispatched within 24 hours using premium courier partners with end-to-end live tracking.</p>
+              </div>
+            </div>
+          </div>
+
+          <a href="#catalog" class="btn btn-primary">
+            <span>Browse Genuine Products</span>
+            <svg class="icon" viewBox="0 0 24 24">
+              <line x1="5" y1="12" x2="19" y2="12" />
+              <polyline points="12 5 19 12 12 19" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VERIFIED CUSTOMER REVIEWS -->
+  <section class="transformations-sec" id="testimonials">
+    <div class="container">
+      <div class="section-headline">
+        <span class="section-eyebrow">Customer Feedback</span>
+        <h2>Loved by Shoppers Across India</h2>
+        <p>Read authentic experiences from shoppers who buy their monthly Herbalife nutrition refills from RS Wellness.</p>
+      </div>
+
+      <div class="testimonials-grid-3col">
+        <div class="story-card">
+          <div>
+            <div class="stars-cluster">
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
+            </div>
+            <p class="story-quote">"Formula 1 Kulfi flavor is so delicious and authentic! Delivered in pristine condition with 100% genuine factory seals and QR codes. My morning breakfast routine is completely sorted."</p>
+          </div>
+          <div class="user-profile-row">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80"
+              alt="Neha Agrawal" class="user-avatar-img">
+            <div class="user-name-meta">
+              <b>Neha Agrawal <svg class="icon" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" /><polyline points="22 4 12 14.01 9 11.01" /></svg></b>
+              <small>Verified Buyer • Delhi</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="story-card">
+          <div>
+            <div class="stars-cluster">
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
+            </div>
+            <p class="story-quote">"Afresh Kashmiri Kahwa and Lemon are lifesavers. I used to feel sleepy by 2 PM; now I have sustained alertness all day without drinking sugary milk tea. Shipping arrived in 2 days."</p>
+          </div>
+          <div class="user-profile-row">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80"
+              alt="Rajesh Sharma" class="user-avatar-img">
+            <div class="user-name-meta">
+              <b>Rajesh Sharma <svg class="icon" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" /><polyline points="22 4 12 14.01 9 11.01" /></svg></b>
+              <small>Verified Buyer • Mumbai</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="story-card">
+          <div>
+            <div class="stars-cluster">
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
+            </div>
+            <p class="story-quote">"The 30-Day Starter Kit gave me everything including the free shaker cup. Products are 100% original with proper batch numbers and security seals. Highly recommended!"</p>
+          </div>
+          <div class="user-profile-row">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=150&q=80"
+              alt="Sunita Verma" class="user-avatar-img">
+            <div class="user-name-meta">
+              <b>Sunita Verma <svg class="icon" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" /><polyline points="22 4 12 14.01 9 11.01" /></svg></b>
+              <small>Verified Buyer • Bangalore</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIP WELLNESS CLUB -->
+  <section style="padding-top:0">
+    <div class="container">
+      <div class="vip-banner-wrap">
+        <h2>Join the RS Wellness Club</h2>
+        <p>Subscribe for restock notifications, seasonal flavor launches, and 10% off your authentic nutrition refills.</p>
+
+        <form class="vip-subscribe-form" onsubmit="handleVipSubmit(event)">
+          <input type="email" id="vipEmailInput" placeholder="Enter your email for 10% voucher code..." required>
+          <button type="submit">
+            <span>Get RSWELL10</span>
+            <svg class="icon" viewBox="0 0 24 24">
+              <line x1="5" y1="12" x2="19" y2="12" />
+              <polyline points="12 5 19 12 12 19" />
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid-4col">
+        <div class="footer-brand-info">
+          <a href="#" class="brand-group" style="margin-bottom:14px; display:inline-block;" aria-label="RS Wellness Home">
+            <img src="logo.png" alt="RS Wellness" style="height:40px;">
+          </a>
+          <p>RS Wellness is an Independent Associate of Herbalife Nutrition India. Dedicated to delivering authentic nutrition products, factory-sealed stock, and active healthy lifestyles.</p>
+
+          <div class="social-icons-row">
+            <a href="#" class="social-btn" aria-label="Instagram">
+              <svg class="icon" viewBox="0 0 24 24">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+              </svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="Facebook">
+              <svg class="icon" viewBox="0 0 24 24">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+              </svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="WhatsApp">
+              <svg class="icon" viewBox="0 0 24 24">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4>Nutrition Lines</h4>
+          <ul>
+            <li><a href="#catalog" onclick="filterBy('Shakes')">Formula 1 Shakes</a></li>
+            <li><a href="#catalog" onclick="filterBy('Teas & Beverages')">Afresh Energy Drinks</a></li>
+            <li><a href="#catalog" onclick="filterBy('Sports Nutrition')">Sports & Fitness Nutrition</a></li>
+            <li><a href="#catalog" onclick="filterBy('Targeted Health')">Targeted Health & Fiber</a></li>
+            <li><a href="#catalog" onclick="filterBy('Ayurveda')">vritilife® Ayurvedic Range</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4>Customer Care</h4>
+          <ul>
+            <li><a href="#catalog">Order Tracking</a></li>
+            <li><a href="#quality">Authenticity Assurance</a></li>
+            <li><a href="#quality">FSSAI Compliance</a></li>
+            <li><a href="#">30-Day Refund Policy</a></li>
+            <li><a href="#">Shipping FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4>Support & Orders</h4>
+          <div class="contact-item-line">
+            <svg class="icon" viewBox="0 0 24 24">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+            </svg>
+            <span>+91 98765 43210</span>
+          </div>
+          <div class="contact-item-line">
+            <svg class="icon" viewBox="0 0 24 24">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+            <span>support@rswellness.in</span>
+          </div>
+          <div class="contact-item-line">
+            <svg class="icon" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10" />
+              <polyline points="12 6 12 12 16 14" />
+            </svg>
+            <span>Mon–Sat: 9:00 AM – 7:30 PM IST</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-strip">
+        <div>© 2026 RS Wellness. Independent Herbalife Associate Storefront.</div>
+        <div style="display:flex;gap:16px;">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Delivery Info</a>
+        </div>
+      </div>
+
+      <p class="disclaimer-text">
+        Disclaimer: RS Wellness is an Independent Associate of Herbalife Nutrition India. Products shown are genuine
+        Herbalife products sold at official MRP inclusive of all taxes. These products are not intended to diagnose,
+        treat, cure, or prevent any disease. Weight management claims are results typical when combined with a
+        calorie-controlled diet and regular physical activity. Individual results will vary.
+      </p>
+    </div>
+  </footer>
+
+  <!-- CART DRAWER -->
+  <div class="drawer-overlay" id="drawerOverlay" onclick="closeAllDrawers()"></div>
+
+  <aside class="slide-drawer" id="cartDrawer" aria-label="Shopping Bag">
+    <div class="drawer-top-header">
+      <h3>
+        <svg class="icon" viewBox="0 0 24 24">
+          <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
+          <line x1="3" y1="6" x2="21" y2="6" />
+          <path d="M16 10a4 4 0 0 1-8 0" />
+        </svg>
+        Shopping Bag (<span id="cartDrawerTitleCount">0</span>)
+      </h3>
+      <button class="close-drawer-icon" onclick="toggleCartDrawer()" aria-label="Close bag">
+        <svg class="icon" viewBox="0 0 24 24">
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Free Shipping Progress Tracker -->
+    <div class="shipping-progress-meter">
+      <span id="shipMeterLabel">Add <strong>₹2,500.00</strong> more for Free Delivery!</span>
+      <div class="meter-progress-track">
+        <div class="meter-progress-fill" id="shipFillBar"></div>
+      </div>
+    </div>
+
+    <!-- Scrollable Items List -->
+    <div class="drawer-scroll-body" id="cartItemsList">
+      <!-- Populated via Javascript -->
+    </div>
+
+    <!-- Bottom Pricing & Checkout -->
+    <div class="drawer-fixed-footer">
+      <div class="promo-input-row">
+        <input type="text" id="voucherCodeInput" placeholder="Voucher: RSWELL10">
+        <button onclick="applyVoucher()">Apply</button>
+      </div>
+
+      <div class="order-totals-breakdown">
+        <div class="calc-row">
+          <span>Subtotal</span>
+          <span id="subtotalVal">₹0.00</span>
+        </div>
+        <div class="calc-row" id="discountSummaryRow" style="display:none; color:#15803d">
+          <span>Discount</span>
+          <span id="discountVal">-₹0.00</span>
+        </div>
+        <div class="calc-row">
+          <span>Courier Shipping</span>
+          <span id="shippingCostVal">₹120.00</span>
+        </div>
+        <div class="calc-row grand-total">
+          <span>Estimated Total (INR)</span>
+          <span id="grandTotalVal">₹0.00</span>
+        </div>
+      </div>
+
+      <button class="btn-checkout-now" onclick="handleCheckoutAction()">
+        <span>Proceed to Secure Checkout</span>
+        <svg class="icon" viewBox="0 0 24 24">
+          <line x1="5" y1="12" x2="19" y2="12" />
+          <polyline points="12 5 19 12 12 19" />
+        </svg>
+      </button>
+    </div>
+  </aside>
+
+  <!-- WISHLIST DRAWER -->
+  <aside class="slide-drawer" id="wishlistDrawer" aria-label="Favourites">
+    <div class="drawer-top-header">
+      <h3>
+        <svg class="icon" viewBox="0 0 24 24">
+          <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+        </svg>
+        Saved Favourites (<span id="wishlistDrawerTitleCount">0</span>)
+      </h3>
+      <button class="close-drawer-icon" onclick="toggleWishlistDrawer()" aria-label="Close favourites">
+        <svg class="icon" viewBox="0 0 24 24">
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+      </button>
+    </div>
+
+    <div class="drawer-scroll-body" id="wishlistItemsList">
+      <!-- Populated via Javascript -->
+    </div>
+  </aside>
+
+  <!-- MODAL QUICK VIEW -->
+  <div class="quick-modal-backdrop" id="quickModal" onclick="closeModalOnBackdrop(event)">
+    <div class="modal-box-card">
+      <button class="modal-close-x" onclick="closeQuickModal()" aria-label="Close modal">
+        <svg class="icon" viewBox="0 0 24 24">
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+      </button>
+
+      <div>
+        <img src="" alt="" id="mProductImg" class="modal-product-img">
+      </div>
+
+      <div class="modal-content-area">
+        <span class="category-label" id="mProductCat">Shakes</span>
+        <h2 style="font-size:20px;margin-bottom:6px" id="mProductTitle">Formula 1 Nutritional Shake Mix</h2>
+
+        <div class="stars-rating-wrap">
+          <div class="stars-cluster" id="mProductStars"></div>
+          <span class="rating-val" id="mProductRating">4.9</span>
+          <span class="review-num" id="mProductReviews">(1,420 verified reviews)</span>
+        </div>
+
+        <div style="margin-bottom:12px;">
+          <div style="display:flex;align-items:baseline;gap:8px;">
+            <span class="price-value" style="font-size:24px;" id="mProductPrice">₹2,385</span>
+            <span class="old-mrp" style="font-size:14px;" id="mProductOldPrice">₹2,650</span>
+          </div>
+          <span class="mrp-notice">MRP (incl. of all taxes)</span>
+        </div>
+
+        <p class="modal-desc-para" id="mProductDesc" style="font-size:13px;color:#475569;line-height:1.5;"></p>
+
+        <!-- Flavor Selector -->
+        <div class="flavor-select-container" id="modalFlavorContainer">
+          <label>Select Your Flavor:</label>
+          <div class="flavor-buttons-list" id="modalFlavorPills">
+            <!-- Populated dynamically -->
+          </div>
+        </div>
+
+        <div class="modal-specs-box">
+          <div class="spec-line">
+            <svg class="icon" viewBox="0 0 24 24">
+              <polyline points="20 6 9 17 4 12" />
+            </svg>
+            <span id="mProductSpec">18g High Quality Protein • 21 Essential Vitamins</span>
+          </div>
+          <div class="spec-line">
+            <svg class="icon" viewBox="0 0 24 24">
+              <polyline points="20 6 9 17 4 12" />
+            </svg>
+            <span>Factory Sealed with Authentic QR Verification</span>
+          </div>
+          <div class="spec-line">
+            <svg class="icon" viewBox="0 0 24 24">
+              <polyline points="20 6 9 17 4 12" />
+            </svg>
+            <span>Fresh Batch Stock with Guaranteed Long Shelf Life</span>
+          </div>
+        </div>
+
+        <div class="modal-bottom-actions">
+          <div class="modal-stepper-box">
+            <button class="qty-btn" onclick="adjustModalQty(-1)">−</button>
+            <span class="qty-digit" id="modalQtyVal">1</span>
+            <button class="qty-btn" onclick="adjustModalQty(1)">+</button>
+          </div>
+
+          <button class="btn btn-primary" style="flex:1" id="btnModalAddBag">
+            <svg class="icon" viewBox="0 0 24 24">
+              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
+              <line x1="3" y1="6" x2="21" y2="6" />
+              <path d="M16 10a4 4 0 0 1-8 0" />
+            </svg>
+            <span>Add to Bag</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CHECKOUT MODAL WITH COMPREHENSIVE PAYMENT GATEWAY DEMO -->
+  <div class="checkout-modal-backdrop" id="checkoutModal" onclick="closeCheckoutOnBackdrop(event)">
+    <div class="checkout-card">
+      <div class="checkout-header">
+        <h3>
+          <svg class="icon" viewBox="0 0 24 24" style="color:#15803d;"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          Direct Associate Order Checkout
+        </h3>
+        <button class="modal-close-x" onclick="closeCheckoutModal()" aria-label="Close checkout">
+          <svg class="icon" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+
+      <!-- Checkout Form Content -->
+      <div class="checkout-body" id="checkoutFormContent">
+        <form id="checkoutForm" onsubmit="handlePaymentSubmit(event)">
+          <!-- Customer Details -->
+          <div class="form-row-2col">
+            <div class="form-group-checkout">
+              <label for="cName">Full Name *</label>
+              <input type="text" id="cName" placeholder="e.g. Rahul Sharma" required value="Ananya Sen">
+            </div>
+            <div class="form-group-checkout">
+              <label for="cPhone">WhatsApp / Mobile Number *</label>
+              <input type="tel" id="cPhone" placeholder="e.g. 9876543210" required value="+91 98765 43219">
+            </div>
+          </div>
+
+          <div class="form-group-checkout">
+            <label for="cEmail">Email Address (for Invoice & Dispatch Slip)</label>
+            <input type="email" id="cEmail" placeholder="e.g. ananya@example.com" value="ananya.sen@example.com">
+          </div>
+
+          <div class="form-group-checkout">
+            <label for="cAddress">Complete Delivery Address *</label>
+            <textarea id="cAddress" rows="2" placeholder="House/Flat No, Street, Landmark, City, State, Pincode" required>Flat 402, Lotus Towers, Indiranagar, Bangalore 560038</textarea>
+          </div>
+
+          <!-- Interactive Payment Gateway Selector Demo -->
+          <div class="payment-section-box">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">
+              <span style="font-size:13px;font-weight:800;color:#0f172a;">Select Payment Gateway Method</span>
+              <span style="font-size:11px;color:#15803d;font-weight:700;display:flex;align-items:center;gap:4px;">
+                <svg style="width:12px;height:12px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                256-Bit SSL Demo Gateway
+              </span>
+            </div>
+
+            <!-- Payment Tabs -->
+            <div class="payment-tabs-nav">
+              <button type="button" class="pay-tab-btn active" onclick="switchPayTab('upi', this)">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="2" y="4" width="20" height="16" rx="2"/><circle cx="12" cy="12" r="4"/></svg>
+                <span>UPI / QR</span>
+              </button>
+              <button type="button" class="pay-tab-btn" onclick="switchPayTab('card', this)">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+                <span>Cards</span>
+              </button>
+              <button type="button" class="pay-tab-btn" onclick="switchPayTab('netbanking', this)">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M3 21h18M3 10h18M5 10v11M19 10v11M9 10v11M15 10v11M12 2L2 7h20L12 2z"/></svg>
+                <span>Net Banking</span>
+              </button>
+              <button type="button" class="pay-tab-btn" onclick="switchPayTab('cod', this)">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+                <span>Cash on Del.</span>
+              </button>
+            </div>
+
+            <!-- Tab 1: UPI Instant & QR -->
+            <div class="pay-tab-pane active" id="pane-upi">
+              <div class="upi-qr-card">
+                <div class="qr-svg-box">
+                  <!-- Dynamic SVG QR Code Illustration with RS logo in center -->
+                  <svg viewBox="0 0 100 100" style="width:100%;height:100%;">
+                    <rect width="100" height="100" fill="#ffffff"/>
+                    <rect x="10" y="10" width="24" height="24" fill="#0f172a"/>
+                    <rect x="14" y="14" width="16" height="16" fill="#ffffff"/>
+                    <rect x="18" y="18" width="8" height="8" fill="#15803d"/>
+                    
+                    <rect x="66" y="10" width="24" height="24" fill="#0f172a"/>
+                    <rect x="70" y="14" width="16" height="16" fill="#ffffff"/>
+                    <rect x="74" y="18" width="8" height="8" fill="#15803d"/>
+
+                    <rect x="10" y="66" width="24" height="24" fill="#0f172a"/>
+                    <rect x="14" y="70" width="16" height="16" fill="#ffffff"/>
+                    <rect x="18" y="74" width="8" height="8" fill="#15803d"/>
+
+                    <!-- QR Data Pattern -->
+                    <circle cx="48" cy="20" r="3" fill="#0f172a"/>
+                    <circle cx="56" cy="28" r="3" fill="#0f172a"/>
+                    <circle cx="44" cy="38" r="3" fill="#15803d"/>
+                    <circle cx="52" cy="48" r="4" fill="#0f172a"/>
+                    <circle cx="68" cy="48" r="3" fill="#0f172a"/>
+                    <circle cx="78" cy="58" r="3" fill="#15803d"/>
+                    <circle cx="48" cy="68" r="3" fill="#0f172a"/>
+                    <circle cx="58" cy="78" r="3" fill="#0f172a"/>
+                    <circle cx="78" cy="78" r="3" fill="#0f172a"/>
+                    <rect x="42" y="42" width="16" height="16" rx="4" fill="#0f5132"/>
+                    <text x="50" y="53" font-size="8" font-weight="bold" fill="#ffffff" text-anchor="middle">RS</text>
+                  </svg>
+                </div>
+                <div style="flex:1;">
+                  <div style="font-size:12.5px;font-weight:700;color:#0f172a;">Scan with Any UPI App</div>
+                  <div style="font-size:11px;color:#64748b;">GPay, PhonePe, Paytm, BHIM, CRED or Bank App</div>
+                  <div class="upi-apps-icons">
+                    <span class="upi-badge-chip">Google Pay</span>
+                    <span class="upi-badge-chip">PhonePe</span>
+                    <span class="upi-badge-chip">Paytm</span>
+                    <span class="upi-badge-chip">CRED</span>
+                  </div>
+                  <button type="button" class="btn-simulate-pay" onclick="simulateUpiApproval()">
+                    <span>⚡ 1-Click Instant UPI Auto-Pay</span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="form-group-checkout" style="margin-bottom:0;">
+                <label style="font-size:12px;">Or Enter UPI ID (VPA)</label>
+                <div style="display:flex;gap:8px;">
+                  <input type="text" id="upiVpaInput" placeholder="username@okhdfcbank" value="ananya@okhdfcbank" style="font-size:13px;">
+                  <button type="button" class="btn btn-secondary" style="padding:6px 14px;font-size:12px;" onclick="showToastAlert('UPI ID Verified: Ananya Sen (HDFC Bank)')">Verify</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tab 2: Credit / Debit Cards -->
+            <div class="pay-tab-pane" id="pane-card">
+              <div class="form-group-checkout">
+                <label>Card Number</label>
+                <input type="text" id="cardNumberInput" placeholder="4532 8921 3847 1928" value="4532 8921 3847 1928" maxlength="19">
+              </div>
+              <div class="form-row-2col">
+                <div class="form-group-checkout">
+                  <label>Expiry (MM/YY)</label>
+                  <input type="text" id="cardExpiryInput" placeholder="08/29" value="08/29" maxlength="5">
+                </div>
+                <div class="form-group-checkout">
+                  <label>CVV / CVC</label>
+                  <input type="password" id="cardCvvInput" placeholder="•••" value="821" maxlength="4">
+                </div>
+              </div>
+              <div class="form-group-checkout" style="margin-bottom:0;">
+                <label>Cardholder Name</label>
+                <input type="text" id="cardNameInput" placeholder="Name on Card" value="ANANYA SEN">
+              </div>
+            </div>
+
+            <!-- Tab 3: Net Banking -->
+            <div class="pay-tab-pane" id="pane-netbanking">
+              <label style="display:block;font-size:12px;font-weight:700;color:#334155;margin-bottom:8px;">Popular Indian Banks</label>
+              <div class="banks-grid-3col">
+                <div class="bank-pill-btn active" onclick="selectBank('HDFC Bank', this)">🏛️ HDFC Bank</div>
+                <div class="bank-pill-btn" onclick="selectBank('ICICI Bank', this)">🏛️ ICICI Bank</div>
+                <div class="bank-pill-btn" onclick="selectBank('State Bank of India', this)">🏛️ SBI Bank</div>
+                <div class="bank-pill-btn" onclick="selectBank('Axis Bank', this)">🏛️ Axis Bank</div>
+                <div class="bank-pill-btn" onclick="selectBank('Kotak Bank', this)">🏛️ Kotak Bank</div>
+                <div class="bank-pill-btn" onclick="selectBank('PNB Bank', this)">🏛️ Punjab NB</div>
+              </div>
+              <select class="form-group-checkout" id="bankDropdown" style="margin-bottom:0;width:100%;">
+                <option value="HDFC Bank">HDFC Bank (Instant Verification)</option>
+                <option value="ICICI Bank">ICICI Bank Direct Pay</option>
+                <option value="State Bank of India">State Bank of India (Retail)</option>
+                <option value="Axis Bank">Axis Bank NetBanking</option>
+                <option value="Other Bank">50+ Other Scheduled Indian Banks</option>
+              </select>
+            </div>
+
+            <!-- Tab 4: Cash on Delivery -->
+            <div class="pay-tab-pane" id="pane-cod">
+              <div style="background:#f0fdf4;border:1px solid #bbf7d0;border-radius:8px;padding:12px 14px;color:#166534;font-size:12.5px;line-height:1.5;">
+                <strong>📦 Doorstep Cash on Delivery (COD) Enabled</strong><br>
+                Pay in cash or UPI QR upon courier delivery. Please verify that the authentic Herbalife tamper-proof outer band and inner security foil seal are intact before receiving.
+              </div>
+            </div>
+
+            <!-- Gateway Security Strip -->
+            <div class="gateway-security-strip">
+              <span>
+                <svg style="width:14px;height:14px;color:#15803d;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                Razorpay & NPCI Certified
+              </span>
+              <span>100% RBI & PCI-DSS Compliant</span>
+            </div>
+          </div>
+
+          <!-- Live Order Summary -->
+          <div class="checkout-order-summary">
+            <div style="font-weight:700;font-size:13.5px;color:#0f172a;margin-bottom:6px;">Order Breakdown (<span id="coItemCount">0</span> items)</div>
+            <div id="coItemsList" style="font-size:12px;color:#475569;margin-bottom:8px;"></div>
+            <div class="summary-line">
+              <span>Subtotal:</span>
+              <span id="coSubtotalVal">₹0</span>
+            </div>
+            <div class="summary-line" id="coDiscountRow" style="display:none;color:#15803d;">
+              <span>Promo Voucher Discount:</span>
+              <span id="coDiscountVal">-₹0</span>
+            </div>
+            <div class="summary-line">
+              <span>Courier Delivery:</span>
+              <span id="coShippingVal">Free Express</span>
+            </div>
+            <div class="summary-line total">
+              <span>Total Payable Amount:</span>
+              <span id="coGrandTotalVal" style="color:#15803d;">₹0</span>
+            </div>
+          </div>
+
+          <!-- Checkout Actions -->
+          <div style="display:flex;gap:12px;margin-top:18px;">
+            <button type="button" class="btn btn-secondary" style="flex:1;" onclick="closeCheckoutModal()">Cancel</button>
+            <button type="submit" class="btn btn-primary" style="flex:2;padding:12px;" id="btnPlaceOrderSubmit">
+              <span id="btnPayLabel">Pay & Authorize Order</span>
+              <svg class="icon" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Success State -->
+      <div class="success-celebrate-box" id="checkoutSuccessState" style="display:none;">
+        <div class="success-icon-badge">
+          <svg style="width:32px;height:32px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <h3 style="font-size:22px;font-weight:800;color:#0f172a;margin-bottom:6px;">Payment Successful & Order Placed! 🎉</h3>
+        <p style="font-size:14px;color:#64748b;margin-bottom:14px;">
+          Order Reference: <strong style="color:#15803d;" id="confirmedOrderId">#ORD-9824</strong> • Txn ID: <code style="background:#f1f5f9;padding:2px 6px;border-radius:4px;" id="confirmedTxnId">pay_rzp_9824</code>
+        </p>
+
+        <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:16px;text-align:left;max-width:440px;margin:0 auto 20px;">
+          <div style="font-size:11.5px;color:#64748b;text-transform:uppercase;font-weight:700;letter-spacing:0.5px;margin-bottom:4px;">Live Synchronization Status</div>
+          <div style="font-size:13px;color:#0f172a;line-height:1.5;">
+            ✅ Payment transaction recorded in <strong>Admin Transactions</strong>.<br>
+            ✅ Transmitted in real-time to the <strong>Admin Backoffice Panel</strong>.<br>
+            📦 Inventory stock has been automatically updated.
+          </div>
+        </div>
+
+        <div style="display:flex;justify-content:center;gap:10px;flex-wrap:wrap;">
+          <button type="button" class="btn btn-secondary" onclick="openTaxInvoiceModal()" style="border-color:#15803d;color:#15803d;font-weight:700;">
+            <span>🧾 Print / View Tax Invoice</span>
+          </button>
+          <a href="http://localhost:5173/payments/transactions" target="_blank" class="btn btn-primary" style="padding:9px 16px;text-decoration:none;">
+            <span>View in Admin Portal</span>
+            <svg class="icon" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+          <button class="btn btn-secondary" onclick="closeCheckoutModal()">
+            Continue Shopping
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- RAZORPAY / BANK GATEWAY SIMULATOR MODAL -->
+  <div class="rzp-gateway-overlay" id="rzpGatewayOverlay">
+    <div class="rzp-gateway-box">
+      <div class="rzp-top-header">
+        <div class="rzp-brand-tag">
+          <svg style="width:16px;height:16px;color:#38bdf8;" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          <span>Razorpay Secure Gateway</span>
+        </div>
+        <div style="font-size:12px;color:#94a3b8;">Demo Authorization</div>
+      </div>
+      <div class="rzp-body-content">
+        <div class="rzp-spinner" id="gatewaySpinner"></div>
+        <h4 style="font-size:17px;font-weight:800;color:#0f172a;margin-bottom:6px;" id="gatewayTitle">Connecting to Bank Gateway...</h4>
+        <p style="font-size:13px;color:#64748b;margin-bottom:14px;" id="gatewaySubtitle">Authorizing ₹<span id="gwAmountVal">0</span> with 256-Bit NPCI Protocol</p>
+        <div style="font-size:11.5px;color:#15803d;background:#f0fdf4;border:1px solid #bbf7d0;padding:6px 12px;border-radius:6px;display:inline-block;" id="gatewayStepBadge">
+          Step 1 of 2: Authenticating Payment Token...
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PRINTABLE TAX INVOICE & PAYMENT RECEIPT MODAL -->
+  <div class="invoice-modal-backdrop" id="taxInvoiceModal" onclick="closeInvoiceOnBackdrop(event)">
+    <div class="invoice-paper-card" id="invoiceCardArea">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;border-bottom:2px solid #0f5132;padding-bottom:16px;margin-bottom:20px;">
+        <div>
+          <h2 style="font-size:22px;color:#0f5132;margin-bottom:2px;">RS WELLNESS NUTRITION</h2>
+          <div style="font-size:11.5px;color:#64748b;">Independent Associate of Herbalife Nutrition India</div>
+          <div style="font-size:11.5px;color:#64748b;">GSTIN: 29AABCR1234F1Z8 • FSSAI Lic: 11221334000452</div>
+        </div>
+        <div style="text-align:right;">
+          <div style="font-size:16px;font-weight:800;color:#0f172a;">TAX INVOICE & RECEIPT</div>
+          <div style="font-size:12px;color:#64748b;" id="invNumber">INV-2026-9824</div>
+          <div style="font-size:12px;color:#64748b;" id="invDate">2026-10-02 17:00</div>
+        </div>
+      </div>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:20px;">
+        <div style="background:#f8fafc;padding:12px;border-radius:8px;">
+          <strong style="color:#0f172a;display:block;margin-bottom:4px;">Billed & Shipped To:</strong>
+          <div id="invCustomerName" style="font-weight:700;">Ananya Sen</div>
+          <div id="invCustomerPhone">+91 98765 43219</div>
+          <div id="invCustomerEmail" style="color:#64748b;">ananya.sen@example.com</div>
+          <div id="invCustomerAddress" style="color:#64748b;margin-top:4px;">Flat 402, Lotus Towers, Bangalore</div>
+        </div>
+        <div style="background:#f8fafc;padding:12px;border-radius:8px;">
+          <strong style="color:#0f172a;display:block;margin-bottom:4px;">Payment Summary:</strong>
+          <div>Status: <span style="color:#15803d;font-weight:800;" id="invPayStatus">PAID IN FULL</span></div>
+          <div>Method: <span id="invPayMethod" style="font-weight:600;">Razorpay (UPI Instant)</span></div>
+          <div>Txn Reference: <code id="invTxnRef" style="font-family:monospace;background:#e2e8f0;padding:1px 5px;border-radius:3px;">pay_rzp_demo</code></div>
+          <div>Delivery: <span style="font-weight:600;">Express Courier Dispatch</span></div>
+        </div>
+      </div>
+
+      <table style="width:100%;border-collapse:collapse;margin-bottom:20px;font-size:12.5px;">
+        <thead>
+          <tr style="background:#f1f5f9;border-bottom:1px solid #cbd5e1;text-align:left;">
+            <th style="padding:8px;">Item Description</th>
+            <th style="padding:8px;text-align:center;">Qty</th>
+            <th style="padding:8px;text-align:right;">MRP</th>
+            <th style="padding:8px;text-align:right;">Amount (INR)</th>
+          </tr>
+        </thead>
+        <tbody id="invItemsTableBody">
+          <!-- Populated dynamically -->
+        </tbody>
+      </table>
+
+      <div style="display:flex;justify-content:flex-end;margin-bottom:24px;">
+        <div style="width:240px;font-size:13px;">
+          <div style="display:flex;justify-content:space-between;margin-bottom:4px;">
+            <span>Subtotal:</span>
+            <span id="invSubtotal">₹0</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;margin-bottom:4px;color:#15803d;" id="invDiscountRow">
+            <span>Discount:</span>
+            <span id="invDiscount">-₹0</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;margin-bottom:4px;">
+            <span>Shipping:</span>
+            <span id="invShipping">Free</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;font-weight:800;font-size:15px;color:#0f172a;border-top:1px dashed #cbd5e1;padding-top:6px;margin-top:6px;">
+            <span>Grand Total:</span>
+            <span id="invGrandTotal">₹0</span>
+          </div>
+        </div>
+      </div>
+
+      <div style="font-size:11px;color:#94a3b8;border-top:1px solid #e2e8f0;padding-top:12px;display:flex;justify-content:space-between;align-items:center;">
+        <span>This is a computer-generated tax invoice and payment receipt.</span>
+        <div style="display:flex;gap:10px;">
+          <button type="button" class="btn btn-primary" onclick="window.print()" style="padding:6px 14px;font-size:12px;">Print / PDF</button>
+          <button type="button" class="btn btn-secondary" onclick="closeTaxInvoiceModal()" style="padding:6px 14px;font-size:12px;">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div class="toast-notification" id="toastNotification">
+    <svg class="icon" viewBox="0 0 24 24">
+      <polyline points="20 6 9 17 4 12" />
+    </svg>
+    <span id="toastText">Item added to bag</span>
+  </div>
+
+  <!-- JAVASCRIPT LOGIC -->
+  <script>
+    /* ==========================================================================
+       API CONFIGURATION & BACKEND INTEGRATION
+       ========================================================================== */
+    const API_BASE = window.API_BASE_URL || (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1" ? "http://localhost:5000/api" : "/api");
+
+    /* ==========================================================================
+       HERBALIFE INDIA CATALOG DATA (SPORTS NUTRITION DIRECT CATALOG)
+       ========================================================================== */
+    const categoriesData = [
+      {
+        id: "shakes",
+        name: "Shakes",
+        label: "Formula 1 Meal Replacements",
+        count: 4,
+        image: "https://images.unsplash.com/photo-1553530666-ba11a7da3888?auto=format&fit=crop&w=700&q=80",
+        iconSvg: `<svg class="icon" viewBox="0 0 24 24"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>`
+      },
+      {
+        id: "teas",
+        name: "Teas & Beverages",
+        label: "Afresh Energy & Aloe",
+        count: 3,
+        image: "https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=700&q=80",
+        iconSvg: `<svg class="icon" viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>`
+      },
+      {
+        id: "sports",
+        name: "Sports Nutrition",
+        label: "Recovery & Active Fitness",
+        count: 2,
+        image: "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=700&q=80",
+        iconSvg: `<svg class="icon" viewBox="0 0 24 24"><path d="M6.5 6.5h11M6.5 17.5h11M2 12h20M5 7v10M19 7v10"/></svg>`
+      },
+      {
+        id: "targeted",
+        name: "Targeted Health",
+        label: "Digestion, Fiber & Heart",
+        count: 3,
+        image: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=700&q=80",
+        iconSvg: `<svg class="icon" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>`
+      },
+      {
+        id: "ayurveda",
+        name: "Ayurveda",
+        label: "vritilife® Ayurvedic",
+        count: 2,
+        image: "https://images.unsplash.com/photo-1608248597359-548762744837?auto=format&fit=crop&w=700&q=80",
+        iconSvg: `<svg class="icon" viewBox="0 0 24 24"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>`
+      }
+    ];
+
+    let products = [
+      {
+        id: 1,
+        name: "Formula 1 Nutritional Shake Mix (Kulfi)",
+        cat: "Shakes",
+        price: 2385,
+        oldPrice: 2650,
+        stock: 45,
+        image: "https://images.unsplash.com/photo-1553530666-ba11a7da3888?auto=format&fit=crop&w=650&q=80",
+        rating: 4.9,
+        reviews: 1420,
+        tag: "Bestseller",
+        tagClass: "badge-bestseller",
+        spec: "9g High Quality Protein • 18 Essential Micronutrients (500g)",
+        flavors: ["Kulfi", "Dutch Chocolate", "French Vanilla", "Mango", "Paan", "Rose Kheer"],
+        desc: "A rich, creamy meal replacement formulated specifically for Indian tastes. Delivers essential vitamins, minerals, and high-quality soy protein to support daily wellness."
+      },
+      {
+        id: 2,
+        name: "Formula 1 Nutritional Shake Mix (Dutch Chocolate)",
+        cat: "Shakes",
+        price: 2385,
+        oldPrice: null,
+        stock: 38,
+        image: "https://images.unsplash.com/photo-1577805947697-89e18249d767?auto=format&fit=crop&w=650&q=80",
+        rating: 4.9,
+        reviews: 1180,
+        tag: "Favorite",
+        tagClass: "badge-bestseller",
+        spec: "Smooth Cocoa • 18 Micronutrients (500g)",
+        flavors: ["Dutch Chocolate", "Kulfi", "Mango", "French Vanilla", "Orange Cream"],
+        desc: "Indulgent Dutch chocolate shake blend. Perfect low-calorie meal replacement with balanced carbohydrates, dietary fiber, and quality protein to sustain energy."
+      },
+      {
+        id: 3,
+        name: "Afresh Energy Drink Mix (Lemon)",
+        cat: "Teas & Beverages",
+        price: 845,
+        oldPrice: 950,
+        stock: 60,
+        image: "https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=650&q=80",
+        rating: 4.8,
+        reviews: 940,
+        tag: "Energy Boost",
+        tagClass: "badge-energy",
+        spec: "Orange Pekoe & Green Tea Extract (50g)",
+        flavors: ["Lemon", "Ginger", "Elaichi", "Peach", "Tulsi", "Kashmiri Kahwa", "Cinnamon"],
+        desc: "Instant energy brew enriched with natural caffeine and antioxidant polyphenols. Helps enhance mental alertness and boosts metabolic calorie burn anytime of day."
+      },
+      {
+        id: 4,
+        name: "Personalized Protein Powder (Formula 3 / PPP)",
+        cat: "Shakes",
+        price: 1530,
+        oldPrice: 1700,
+        stock: 25,
+        image: "https://images.unsplash.com/photo-1593095948071-474c5cc2989d?auto=format&fit=crop&w=650&q=80",
+        rating: 4.9,
+        reviews: 820,
+        tag: "Muscle & Fullness",
+        tagClass: "badge-sport",
+        spec: "5g Soy & Whey Protein per Scoop (200g/400g)",
+        flavors: ["Unflavored (Blends with Shake)"],
+        desc: "Convenient fat-free protein boost designed to be blended directly into your Formula 1 shake. Helps satisfy hunger, curb cravings, and maintain lean muscle mass."
+      },
+      {
+        id: 5,
+        name: "Herbal Aloe Concentrate (Mango)",
+        cat: "Teas & Beverages",
+        price: 2795,
+        oldPrice: 3100,
+        stock: 18,
+        image: "https://images.unsplash.com/photo-1563227812-0ea4c22e6cc8?auto=format&fit=crop&w=650&q=80",
+        rating: 4.9,
+        reviews: 650,
+        tag: "Digestive Care",
+        tagClass: "badge-bestseller",
+        spec: "Premium Purified Aloe Vera with Chamomile (500ml)",
+        flavors: ["Mango", "Original"],
+        desc: "Refreshing botanical drink that supports nutrient absorption and healthy gut digestion. Add 3 capfuls to 120ml cold water for an invigorating digestive tonic."
+      },
+      {
+        id: 6,
+        name: "Cell-U-Loss Herbal Fluid Balance",
+        cat: "Targeted Health",
+        price: 1810,
+        oldPrice: 2010,
+        stock: 14,
+        image: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=650&q=80",
+        rating: 4.7,
+        reviews: 510,
+        tag: "Fluid Balance",
+        tagClass: "badge-energy",
+        spec: "Corn Silk Extract + Dandelion + Potassium (90 Tablets)",
+        flavors: ["Standard Tablets"],
+        desc: "Formulated with corn silk extract, dandelion, and essential minerals to support the body's natural elimination of excess water and maintain healthy fluid equilibrium."
+      },
+      {
+        id: 7,
+        name: "Afresh Energy Drink Mix (Kashmiri Kahwa)",
+        cat: "Teas & Beverages",
+        price: 845,
+        oldPrice: null,
+        stock: 6,
+        image: "https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=650&q=80",
+        rating: 4.9,
+        reviews: 610,
+        tag: "Special Edition",
+        tagClass: "badge-bestseller",
+        spec: "Traditional Kashmiri Spices & Green Tea (50g)",
+        flavors: ["Kashmiri Kahwa", "Elaichi", "Ginger", "Lemon"],
+        desc: "Inspired by royal Kashmir valleys! A warming aromatic blend of cardamom, cinnamon, clove, and natural green tea extracts for instant rejuvenation."
+      },
+      {
+        id: 8,
+        name: "Herbalife 30-Day Starter Nutrition Kit",
+        cat: "Shakes",
+        price: 6850,
+        oldPrice: 7750,
+        stock: 12,
+        image: "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=650&q=80",
+        rating: 5.0,
+        reviews: 420,
+        tag: "Best Value Pack",
+        tagClass: "badge-bestseller",
+        spec: "2x Formula 1 + 1x PPP + 1x Afresh + Free Shaker Cup",
+        flavors: ["Kulfi + Chocolate", "Vanilla + Mango", "Chocolate + Berry"],
+        desc: "The complete monthly nutrition program! Includes two canisters of Formula 1 Shakes, Personalized Protein Powder, Afresh Energy Drink, and a free Herbalife shaker cup."
+      },
+      {
+        id: 9,
+        name: "Rebuild Strength Post-Workout Protein (Chocolate)",
+        cat: "Sports Nutrition",
+        price: 3890,
+        oldPrice: 4320,
+        stock: 20,
+        image: "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=650&q=80",
+        rating: 4.9,
+        reviews: 380,
+        tag: "Informed-Sport",
+        tagClass: "badge-sport",
+        spec: "24g Whey & Casein Protein + BCAAs (1000g)",
+        flavors: ["Chocolate"],
+        desc: "Certified Informed-Sport tested for banned substances. Delivers 24g of dual-source protein to rebuild fatigued muscles and speed up recovery post-workout."
+      },
+      {
+        id: 10,
+        name: "vritilife® Triphala Digestive Care",
+        cat: "Ayurveda",
+        price: 1395,
+        oldPrice: 1550,
+        stock: 30,
+        image: "https://images.unsplash.com/photo-1608248597359-548762744837?auto=format&fit=crop&w=650&q=80",
+        rating: 4.8,
+        reviews: 290,
+        tag: "Ayurveda",
+        tagClass: "badge-ayurveda",
+        spec: "Amla, Haritaki & Bibhitaki Pure Extract (60 Tablets)",
+        flavors: ["Ayurvedic Tablets"],
+        desc: "Formulated based on classical Ayurvedic principles. Promotes bowel regularity, gently cleanses the colon, and supports optimal digestion naturally."
+      },
+      {
+        id: 11,
+        name: "Herbalifeline® Omega-3 Marine Lipids",
+        cat: "Targeted Health",
+        price: 2470,
+        oldPrice: 2750,
+        stock: 0,
+        image: "https://images.unsplash.com/photo-1550572017-edd951aa8f72?auto=format&fit=crop&w=650&q=80",
+        rating: 4.9,
+        reviews: 430,
+        tag: "Heart Health",
+        tagClass: "badge-bestseller",
+        spec: "EPA & DHA Omega-3 Fatty Acids + Vitamin E (60 Softgels)",
+        flavors: ["Softgels"],
+        desc: "Rich source of essential Omega-3 fatty acids EPA and DHA. Supports normal cardiovascular and heart function, joint mobility, and cellular health."
+      },
+      {
+        id: 12,
+        name: "Active Fiber Complex (Crisp Apple)",
+        cat: "Targeted Health",
+        price: 2210,
+        oldPrice: 2450,
+        stock: 22,
+        image: "https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&w=650&q=80",
+        rating: 4.8,
+        reviews: 310,
+        tag: "Regularity",
+        tagClass: "badge-energy",
+        spec: "5g Soluble & Insoluble Dietary Fiber (210g)",
+        flavors: ["Crisp Apple", "Unflavored"],
+        desc: "Tasty, convenient dietary fiber drink powder. Supports gastrointestinal regularity, healthy bowel movement, and prolonged feeling of satiety."
+      }
+    ];
+
+    /* ==========================================================================
+       APP STATE
+       ========================================================================== */
+    let cart = JSON.parse(localStorage.getItem("rsw_hl_cart") || "[]");
+    let wishlist = JSON.parse(localStorage.getItem("rsw_hl_wishlist") || "[]");
+    let activeCategory = "All";
+    let activeSearch = "";
+    let activeSort = "featured";
+    let modalProduct = null;
+    let modalQuantity = 1;
+    let modalFlavor = "";
+    let discountRatio = 0;
+    let activePaymentTab = "upi";
+    let lastOrderDetails = null;
+
+    /* ==========================================================================
+       INITIAL LOAD & API FETCH
+       ========================================================================== */
+    document.addEventListener("DOMContentLoaded", () => {
+      renderCategoryTiles();
+      renderCategoryPills();
+      renderProductsGrid();
+      updateCartDisplay();
+      updateWishlistDisplay();
+
+      // Fetch dynamic products from shared backend
+      fetchProductsFromAPI();
+    });
+
+    async function fetchProductsFromAPI() {
+      try {
+        const res = await fetch(`${API_BASE}/products`);
+        if (res.ok) {
+          const liveProds = await res.json();
+          if (Array.isArray(liveProds) && liveProds.length > 0) {
+            products = liveProds;
+            renderCategoryPills();
+            renderProductsGrid();
+            updateCartDisplay();
+          }
+        }
+      } catch (err) {
+        console.log("Using embedded catalog data:", err);
+      }
+    }
+
+    /* ==========================================================================
+       CATEGORY TILES & PILLS
+       ========================================================================== */
+    function renderCategoryTiles() {
+      const container = document.getElementById("categoryTiles");
+      if (!container) return;
+      container.innerHTML = categoriesData.map(c => `
+        <div class="cat-tile" onclick="filterBy('${c.name}')">
+          <img src="${c.image}" alt="${c.name}" loading="lazy">
+          <div class="cat-icon-container">${c.iconSvg}</div>
+          <div class="cat-tile-meta">
+            <h3>${c.name}</h3>
+            <span>
+              ${c.count} Products Available
+              <svg class="icon" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </span>
+          </div>
+        </div>
+      `).join("");
+    }
+
+    function renderCategoryPills() {
+      const container = document.getElementById("categoryPills");
+      if (!container) return;
+      const uniqueCats = ["All", ...new Set(products.map(p => p.cat || p.category))];
+      container.innerHTML = uniqueCats.map(cat => `
+        <button class="cat-pill-btn ${cat === activeCategory ? 'active' : ''}" onclick="filterBy('${cat}')">
+          ${cat}
+        </button>
+      `).join("");
+    }
+
+    function filterBy(category) {
+      activeCategory = category;
+      renderCategoryPills();
+      renderProductsGrid();
+      const catalogEl = document.getElementById("catalog");
+      if (catalogEl) {
+        catalogEl.scrollIntoView({ behavior: 'smooth' });
+      }
+      closeMobileNav();
+    }
+
+    function handleSearchInput(val) {
+      activeSearch = val.toLowerCase().trim();
+      renderProductsGrid();
+    }
+
+    function focusSearchInput() {
+      const inp = document.getElementById("searchInput");
+      if (inp) {
+        document.getElementById("catalog").scrollIntoView({ behavior: 'smooth' });
+        setTimeout(() => inp.focus(), 300);
+      }
+    }
+
+    function handleSortChange(sortVal) {
+      activeSort = sortVal;
+      renderProductsGrid();
+    }
+
+    /* ==========================================================================
+       PRODUCTS GRID RENDERING
+       ========================================================================== */
+    function renderProductsGrid() {
+      const grid = document.getElementById("productsGrid");
+      if (!grid) return;
+
+      let filtered = products.filter(p => {
+        const prodCat = p.cat || p.category;
+        const matchesCategory = (activeCategory === "All") || (prodCat === activeCategory);
+        const matchesQuery = !activeSearch ||
+          p.name.toLowerCase().includes(activeSearch) ||
+          (p.desc && p.desc.toLowerCase().includes(activeSearch)) ||
+          (prodCat && prodCat.toLowerCase().includes(activeSearch)) ||
+          (p.flavors && p.flavors.some(f => f.toLowerCase().includes(activeSearch)));
+        return matchesCategory && matchesQuery;
+      });
+
+      if (activeSort === "price-asc") {
+        filtered.sort((a, b) => a.price - b.price);
+      } else if (activeSort === "price-desc") {
+        filtered.sort((a, b) => b.price - a.price);
+      } else if (activeSort === "rating") {
+        filtered.sort((a, b) => b.rating - a.rating);
+      }
+
+      if (!filtered.length) {
+        grid.innerHTML = `
+          <div style="grid-column:1/-1;text-align:center;padding:50px 20px;background:#ffffff;border-radius:14px;border:1px solid #e2e8f0;">
+            <svg class="icon" style="width:44px;height:44px;color:#94a3b8;margin-bottom:12px;" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <h3 style="font-size:18px;margin-bottom:6px;">No Matching Herbalife Products</h3>
+            <p style="color:#64748b;font-size:13.5px;">Try searching for "Kulfi", "Afresh", "Protein", or "Aloe".</p>
+            <button class="btn btn-secondary" style="margin-top:16px;" onclick="resetAllFilters()">Reset Filter</button>
+          </div>
+        `;
+        return;
+      }
+
+      grid.innerHTML = filtered.map(p => {
+        const isFav = wishlist.includes(p.id);
+        const isOutOfStock = p.stock === 0 || p.status === 'Out of Stock';
+
+        return `
+          <div class="hl-product-card">
+            <div class="product-img-box">
+              <img src="${p.image}" alt="${p.name}" loading="lazy">
+              ${p.tag ? `<span class="sku-badge ${p.tagClass || 'badge-bestseller'}">${p.tag}</span>` : ""}
+              
+              <button class="heart-fav-btn ${isFav ? 'active' : ''}" onclick="toggleFav(${p.id})" aria-label="Add to favourites">
+                <svg class="icon" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+              </button>
+
+              <button class="quick-view-hover" onclick="openModalView(${p.id})">
+                <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                <span>Quick View & Flavors</span>
+              </button>
+            </div>
+
+            <div class="product-info-block">
+              <span class="category-label">${p.cat || p.category}</span>
+              <h3 class="product-title-text">${p.name}</h3>
+              <p class="product-summary-text">${p.desc || ''}</p>
+
+              <div class="tag-features-row">
+                <span class="tag-feature-pill">${(p.spec && p.spec.split('•')[0]) || 'Herbalife India'}</span>
+                ${p.flavors && p.flavors.length > 1 ? `<span class="tag-feature-pill" style="background:#fffbeb;color:#92400e;border-color:#fde68a;">${p.flavors.length} Flavours</span>` : ''}
+              </div>
+
+              <div class="stars-rating-wrap">
+                <div class="stars-cluster">
+                  ${renderStars(p.rating || 5.0)}
+                </div>
+                <span class="rating-val">${p.rating || 5.0}</span>
+                <span class="review-num">(${p.reviews || 100})</span>
+              </div>
+
+              <div style="font-size:11px;color:${p.stock <= 10 && p.stock > 0 ? '#d97706' : isOutOfStock ? '#dc2626' : '#15803d'};margin-bottom:10px;font-weight:700;">
+                ${isOutOfStock ? '❌ Out of Stock' : p.stock <= 10 ? `⚠️ Only ${p.stock} units left in stock!` : `🟢 In Stock (${p.stock || 20} units)`}
+              </div>
+
+              <div class="card-footer-action">
+                <div class="mrp-price-block">
+                  <span class="mrp-notice">MRP (incl. taxes)</span>
+                  <div style="display:flex;align-items:baseline;">
+                    <span class="price-value">₹${p.price.toLocaleString('en-IN')}</span>
+                    ${p.oldPrice ? `<span class="old-mrp">₹${p.oldPrice.toLocaleString('en-IN')}</span>` : ""}
+                  </div>
+                </div>
+
+                <button class="btn-add-bag" ${isOutOfStock ? 'disabled style="opacity:0.5;cursor:not-allowed;"' : ''} onclick="addToBagItem(${p.id})">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                  <span>${isOutOfStock ? 'Sold Out' : 'Add'}</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        `;
+      }).join("");
+    }
+
+    function resetAllFilters() {
+      activeCategory = "All";
+      activeSearch = "";
+      const inp = document.getElementById("searchInput");
+      if (inp) inp.value = "";
+      renderCategoryPills();
+      renderProductsGrid();
+    }
+
+    function renderStars(rating) {
+      let stars = "";
+      for (let i = 1; i <= 5; i++) {
+        stars += `<svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>`;
+      }
+      return stars;
+    }
+
+    /* ==========================================================================
+       CART / BAG OPERATIONS
+       ========================================================================== */
+    function addToBagItem(id, qty = 1, flavor = "") {
+      const p = products.find(prod => prod.id === id);
+      if (!p) return;
+
+      if (p.stock === 0) {
+        showToastAlert("Sorry, this item is currently Out of Stock!");
+        return;
+      }
+
+      const itemFlavor = flavor || (p.flavors && p.flavors.length > 0 ? p.flavors[0] : "");
+      const existing = cart.find(i => i.id === id && i.flavor === itemFlavor);
+
+      if (existing) {
+        existing.qty += qty;
+      } else {
+        cart.push({ id, qty, flavor: itemFlavor });
+      }
+
+      saveCart();
+      showToastAlert(`Added ${p.name} to bag`);
+    }
+
+    function modifyItemQty(id, flavor, delta) {
+      const item = cart.find(i => i.id === id && i.flavor === flavor);
+      if (!item) return;
+
+      item.qty += delta;
+      if (item.qty <= 0) {
+        cart = cart.filter(i => !(i.id === id && i.flavor === flavor));
+      }
+      saveCart();
+    }
+
+    function removeItemFromBag(id, flavor) {
+      cart = cart.filter(i => !(i.id === id && i.flavor === flavor));
+      saveCart();
+      showToastAlert("Item removed from bag");
+    }
+
+    function saveCart() {
+      localStorage.setItem("rsw_hl_cart", JSON.stringify(cart));
+      updateCartDisplay();
+    }
+
+    function updateCartDisplay() {
+      const totalCount = cart.reduce((sum, item) => sum + item.qty, 0);
+      document.getElementById("cartCount").textContent = totalCount;
+      document.getElementById("cartDrawerTitleCount").textContent = totalCount;
+
+      const body = document.getElementById("cartItemsList");
+
+      if (!cart.length) {
+        body.innerHTML = `
+          <div class="empty-cart-state">
+            <div class="empty-icon-wrap">
+              <svg class="icon" style="width:28px;height:28px" viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+            </div>
+            <h4 style="font-size:16px;color:#0f172a;margin-bottom:6px;">Your Bag is Empty</h4>
+            <p style="font-size:13px;color:#64748b;">Add Formula 1 Shakes or Afresh to begin shopping.</p>
+            <button class="btn btn-primary" style="margin-top:16px;padding:8px 18px;font-size:13px;" onclick="toggleCartDrawer()">Explore Products</button>
+          </div>
+        `;
+        document.getElementById("shipMeterLabel").innerHTML = `Add <strong>₹2,500.00</strong> more for Free Courier Delivery!`;
+        document.getElementById("shipFillBar").style.width = "0%";
+        document.getElementById("subtotalVal").textContent = "₹0.00";
+        document.getElementById("grandTotalVal").textContent = "₹0.00";
+        document.getElementById("discountSummaryRow").style.display = "none";
+        return;
+      }
+
+      body.innerHTML = cart.map(item => {
+        const p = products.find(prod => prod.id === item.id);
+        if (!p) return "";
+        return `
+          <div class="cart-item-card">
+            <img src="${p.image}" alt="${p.name}" class="cart-item-photo">
+            <div class="cart-item-details">
+              <span class="cart-item-title">${p.name}</span>
+              ${item.flavor ? `<span style="font-size:11px;color:#15803d;font-weight:700;display:block;">Flavour: ${item.flavor}</span>` : ''}
+              <span class="cart-item-price-tag">₹${(p.price * item.qty).toLocaleString('en-IN')} (₹${p.price.toLocaleString('en-IN')} ea)</span>
+              
+              <div class="cart-qty-row">
+                <div class="qty-counter-box">
+                  <button class="qty-btn" onclick="modifyItemQty(${p.id}, '${item.flavor || ""}', -1)">−</button>
+                  <span class="qty-digit">${item.qty}</span>
+                  <button class="qty-btn" onclick="modifyItemQty(${p.id}, '${item.flavor || ""}', 1)">+</button>
+                </div>
+
+                <button class="remove-action-btn" onclick="removeItemFromBag(${p.id}, '${item.flavor || ""}')">
+                  <svg class="icon" style="width:13px;height:13px" viewBox="0 0 24 24"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
+                  <span>Remove</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        `;
+      }).join("");
+
+      // Pricing calculation
+      const subtotal = cart.reduce((sum, item) => {
+        const p = products.find(prod => prod.id === item.id);
+        return sum + (p ? p.price * item.qty : 0);
+      }, 0);
+
+      const discount = subtotal * discountRatio;
+      const freeShipMin = 2500;
+      const isFreeShip = subtotal >= freeShipMin;
+      const remainingForFree = Math.max(0, freeShipMin - subtotal);
+      const percent = Math.min(100, (subtotal / freeShipMin) * 100);
+
+      document.getElementById("shipFillBar").style.width = `${percent}%`;
+
+      if (isFreeShip) {
+        document.getElementById("shipMeterLabel").innerHTML = `🎉 <strong>Congratulations!</strong> You Unlocked Free Express Delivery!`;
+        document.getElementById("shippingCostVal").textContent = "Free";
+      } else {
+        document.getElementById("shipMeterLabel").innerHTML = `Add <strong>₹${remainingForFree.toLocaleString('en-IN')}</strong> more for Free Delivery`;
+        document.getElementById("shippingCostVal").textContent = "₹120.00";
+      }
+
+      const shipping = isFreeShip ? 0 : 120;
+      const grandTotal = Math.max(0, subtotal - discount + shipping);
+
+      document.getElementById("subtotalVal").textContent = `₹${subtotal.toLocaleString('en-IN')}`;
+
+      if (discountRatio > 0) {
+        document.getElementById("discountSummaryRow").style.display = "flex";
+        document.getElementById("discountVal").textContent = `-₹${discount.toLocaleString('en-IN')}`;
+      } else {
+        document.getElementById("discountSummaryRow").style.display = "none";
+      }
+
+      document.getElementById("grandTotalVal").textContent = `₹${grandTotal.toLocaleString('en-IN')}`;
+    }
+
+    /* ==========================================================================
+       DYNAMIC COUPONS & VOUCHER VALIDATION
+       ========================================================================== */
+    async function applyVoucher() {
+      const code = document.getElementById("voucherCodeInput").value.trim().toUpperCase();
+      if (!code) return;
+
+      try {
+        const res = await fetch(`${API_BASE}/coupons`);
+        if (res.ok) {
+          const coupons = await res.json();
+          const match = coupons.find(c => c.code.toUpperCase() === code && c.status === "Active");
+          if (match) {
+            discountRatio = match.discountRatio || (parseFloat(match.discount) / 100) || 0.10;
+            saveCart();
+            showToastAlert(`Voucher ${match.code} applied! ${match.discount} Discount unlocked.`);
+            return;
+          }
+        }
+      } catch (e) {
+        console.log("Checking fallback coupon:", e);
+      }
+
+      if (code === "RSWELL10" || code === "HERBALIFE10") {
+        discountRatio = 0.10;
+        saveCart();
+        showToastAlert("Voucher RSWELL10 applied! 10% Discount saved.");
+      } else {
+        showToastAlert("Invalid or expired voucher code. Try RSWELL10 or FIT2026!");
+      }
+    }
+
+    function toggleCartDrawer() {
+      document.getElementById("cartDrawer").classList.toggle("active");
+      document.getElementById("drawerOverlay").classList.toggle("active");
+    }
+
+    /* ==========================================================================
+       PAYMENT TABS & GATEWAY INTEGRATION
+       ========================================================================== */
+    function switchPayTab(tabKey, btn) {
+      activePaymentTab = tabKey;
+      document.querySelectorAll(".pay-tab-btn").forEach(b => b.classList.remove("active"));
+      document.querySelectorAll(".pay-tab-pane").forEach(p => p.classList.remove("active"));
+      
+      btn.classList.add("active");
+      const targetPane = document.getElementById(`pane-${tabKey}`);
+      if (targetPane) targetPane.classList.add("active");
+
+      const label = document.getElementById("btnPayLabel");
+      if (tabKey === 'cod') {
+        label.textContent = "Confirm Order (Cash on Delivery)";
+      } else if (tabKey === 'upi') {
+        label.textContent = "Pay via UPI (GPay / PhonePe / QR)";
+      } else if (tabKey === 'card') {
+        label.textContent = "Pay via Card (Razorpay PG)";
+      } else {
+        label.textContent = "Pay via Net Banking";
+      }
+    }
+
+    function selectBank(bankName, el) {
+      document.querySelectorAll(".bank-pill-btn").forEach(b => b.classList.remove("active"));
+      el.classList.add("active");
+      const sel = document.getElementById("bankDropdown");
+      if (sel) sel.value = bankName;
+      showToastAlert(`Selected ${bankName}`);
+    }
+
+    function simulateUpiApproval() {
+      showToastAlert("⚡ Simulating UPI app approval notification...");
+      setTimeout(() => {
+        handlePaymentSubmit(new Event('submit'));
+      }, 500);
+    }
+
+    function handleCheckoutAction() {
+      if (!cart.length) {
+        showToastAlert("Your bag is empty! Add products to proceed.");
+        return;
+      }
+      openCheckoutModal();
+    }
+
+    function openCheckoutModal() {
+      const subtotal = cart.reduce((sum, item) => {
+        const p = products.find(prod => prod.id === item.id);
+        return sum + (p ? p.price * item.qty : 0);
+      }, 0);
+
+      const discount = subtotal * discountRatio;
+      const shipping = subtotal >= 2500 ? 0 : 120;
+      const grandTotal = Math.max(0, subtotal - discount + shipping);
+
+      document.getElementById("coItemCount").textContent = cart.reduce((s, i) => s + i.qty, 0);
+      document.getElementById("coSubtotalVal").textContent = `₹${subtotal.toLocaleString('en-IN')}`;
+
+      if (discount > 0) {
+        document.getElementById("coDiscountRow").style.display = "flex";
+        document.getElementById("coDiscountVal").textContent = `-₹${discount.toLocaleString('en-IN')}`;
+      } else {
+        document.getElementById("coDiscountRow").style.display = "none";
+      }
+
+      document.getElementById("coShippingVal").textContent = shipping === 0 ? "Free Express" : "₹120.00";
+      document.getElementById("coGrandTotalVal").textContent = `₹${grandTotal.toLocaleString('en-IN')}`;
+
+      // Populate items summary
+      const itemsHtml = cart.map(item => {
+        const p = products.find(prod => prod.id === item.id);
+        return p ? `<div>• ${p.name} ${item.flavor ? `(${item.flavor})` : ''} × ${item.qty} (₹${(p.price * item.qty).toLocaleString('en-IN')})</div>` : '';
+      }).join('');
+      document.getElementById("coItemsList").innerHTML = itemsHtml;
+
+      document.getElementById("checkoutFormContent").style.display = "block";
+      document.getElementById("checkoutSuccessState").style.display = "none";
+      document.getElementById("checkoutModal").classList.add("active");
+    }
+
+    function closeCheckoutModal() {
+      document.getElementById("checkoutModal").classList.remove("active");
+    }
+
+    function closeCheckoutOnBackdrop(e) {
+      if (e.target.id === "checkoutModal") {
+        closeCheckoutModal();
+      }
+    }
+
+    /* ==========================================================================
+       PAYMENT SUBMISSION & 3D SECURE GATEWAY SIMULATOR
+       ========================================================================== */
+    async function handlePaymentSubmit(e) {
+      if (e && e.preventDefault) e.preventDefault();
+
+      const subtotal = cart.reduce((sum, item) => {
+        const p = products.find(prod => prod.id === item.id);
+        return sum + (p ? p.price * item.qty : 0);
+      }, 0);
+
+      const discount = subtotal * discountRatio;
+      const shipping = subtotal >= 2500 ? 0 : 120;
+      const grandTotal = Math.max(0, subtotal - discount + shipping);
+
+      const customerName = document.getElementById("cName").value.trim() || "Ananya Sen";
+      const customerPhone = document.getElementById("cPhone").value.trim() || "+91 98765 43219";
+      const customerEmail = document.getElementById("cEmail").value.trim() || "ananya.sen@example.com";
+      const customerAddress = document.getElementById("cAddress").value.trim() || "Store Delivery Address";
+
+      let paymentMethodName = "Cash on Delivery";
+      let isOnlinePayment = true;
+
+      if (activePaymentTab === 'upi') {
+        paymentMethodName = `Razorpay (UPI: ${document.getElementById('upiVpaInput').value.trim() || 'GPay'})`;
+      } else if (activePaymentTab === 'card') {
+        const cNum = document.getElementById('cardNumberInput').value.trim();
+        const last4 = cNum.replace(/\s+/g, '').slice(-4) || '8912';
+        paymentMethodName = `Razorpay (Card ending in •••• ${last4})`;
+      } else if (activePaymentTab === 'netbanking') {
+        paymentMethodName = `Razorpay NetBanking (${document.getElementById('bankDropdown').value})`;
+      } else {
+        paymentMethodName = "Cash on Delivery (COD)";
+        isOnlinePayment = false;
+      }
+
+      // If online payment, open Razorpay simulated processing gateway
+      if (isOnlinePayment) {
+        document.getElementById("gwAmountVal").textContent = grandTotal.toLocaleString('en-IN');
+        document.getElementById("gatewayTitle").textContent = "Connecting to Bank Gateway...";
+        document.getElementById("gatewayStepBadge").textContent = "Step 1 of 2: Authenticating Payment Token...";
+        document.getElementById("rzpGatewayOverlay").classList.add("active");
+
+        await new Promise(r => setTimeout(r, 900));
+
+        document.getElementById("gatewayTitle").textContent = "Verifying 3D Secure Authorization...";
+        document.getElementById("gatewayStepBadge").textContent = "Step 2 of 2: Authorizing with NPCI/Bank...";
+
+        await new Promise(r => setTimeout(r, 900));
+
+        document.getElementById("rzpGatewayOverlay").classList.remove("active");
+      }
+
+      // Generate transaction and order IDs
+      const generatedTxnId = isOnlinePayment ? `pay_rzp_${Math.random().toString(36).substring(2, 9)}` : "-";
+      const orderNum = Math.floor(1000 + Math.random() * 9000);
+      const generatedOrderId = `#ORD-${orderNum}`;
+
+      const orderPayload = {
+        customer: customerName,
+        phone: customerPhone,
+        email: customerEmail,
+        address: customerAddress,
+        payment_method: paymentMethodName,
+        payment_status: isOnlinePayment ? "Paid" : "Pending (COD)",
+        payment_gateway: isOnlinePayment ? "Razorpay PG" : "Direct COD",
+        transaction_id: generatedTxnId,
+        subtotal,
+        discount,
+        shipping,
+        items: cart.map(i => {
+          const p = products.find(x => x.id === i.id);
+          return {
+            id: i.id,
+            name: p ? p.name : "Product",
+            flavor: i.flavor || "Standard",
+            qty: i.qty,
+            price: p ? p.price : 0
+          };
+        })
+      };
+
+      try {
+        const response = await fetch(`${API_BASE}/orders`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(orderPayload)
+        });
+
+        if (response.ok) {
+          const resData = await response.json();
+          const finalId = resData.order ? resData.order.order_id : generatedOrderId;
+          const finalTxn = resData.transaction_id || generatedTxnId;
+
+          lastOrderDetails = {
+            order_id: finalId,
+            transaction_id: finalTxn,
+            customer: customerName,
+            phone: customerPhone,
+            email: customerEmail,
+            address: customerAddress,
+            payment_method: paymentMethodName,
+            payment_status: isOnlinePayment ? "PAID IN FULL" : "PENDING (COD)",
+            subtotal,
+            discount,
+            shipping,
+            grandTotal,
+            date: new Date().toISOString().replace('T', ' ').substring(0, 16),
+            items: orderPayload.items
+          };
+
+          document.getElementById("confirmedOrderId").textContent = finalId;
+          document.getElementById("confirmedTxnId").textContent = finalTxn;
+
+          // Clear Bag
+          cart = [];
+          saveCart();
+          discountRatio = 0;
+
+          // Refresh catalog stock
+          fetchProductsFromAPI();
+
+          // Show celebration state
+          document.getElementById("checkoutFormContent").style.display = "none";
+          document.getElementById("checkoutSuccessState").style.display = "block";
+          showToastAlert(`🎉 Payment Approved! Order ${finalId} created.`);
+          return;
+        }
+      } catch (err) {
+        console.error("API transmission fallback:", err);
+      }
+
+      // Offline simulation fallback
+      lastOrderDetails = {
+        order_id: generatedOrderId,
+        transaction_id: generatedTxnId,
+        customer: customerName,
+        phone: customerPhone,
+        email: customerEmail,
+        address: customerAddress,
+        payment_method: paymentMethodName,
+        payment_status: isOnlinePayment ? "PAID IN FULL" : "PENDING (COD)",
+        subtotal,
+        discount,
+        shipping,
+        grandTotal,
+        date: new Date().toISOString().replace('T', ' ').substring(0, 16),
+        items: orderPayload.items
+      };
+
+      document.getElementById("confirmedOrderId").textContent = generatedOrderId;
+      document.getElementById("confirmedTxnId").textContent = generatedTxnId;
+      cart = [];
+      saveCart();
+      document.getElementById("checkoutFormContent").style.display = "none";
+      document.getElementById("checkoutSuccessState").style.display = "block";
+    }
+
+    /* ==========================================================================
+       TAX INVOICE & RECEIPT MODAL
+       ========================================================================== */
+    function openTaxInvoiceModal() {
+      if (!lastOrderDetails) {
+        showToastAlert("No recent order to display invoice for.");
+        return;
+      }
+
+      const d = lastOrderDetails;
+      document.getElementById("invNumber").textContent = `INV-${d.order_id.replace('#', '')}`;
+      document.getElementById("invDate").textContent = d.date;
+      document.getElementById("invCustomerName").textContent = d.customer;
+      document.getElementById("invCustomerPhone").textContent = d.phone;
+      document.getElementById("invCustomerEmail").textContent = d.email;
+      document.getElementById("invCustomerAddress").textContent = d.address;
+      document.getElementById("invPayStatus").textContent = d.payment_status;
+      document.getElementById("invPayMethod").textContent = d.payment_method;
+      document.getElementById("invTxnRef").textContent = d.transaction_id;
+
+      // Table items
+      const tbody = document.getElementById("invItemsTableBody");
+      tbody.innerHTML = d.items.map(item => `
+        <tr style="border-bottom:1px solid #f1f5f9;">
+          <td style="padding:8px;">
+            <strong>${item.name}</strong>
+            ${item.flavor ? `<div style="font-size:11px;color:#15803d;">Flavour: ${item.flavor}</div>` : ''}
+            <div style="font-size:10.5px;color:#94a3b8;">HSN: 2106 • Batch Verified</div>
+          </td>
+          <td style="padding:8px;text-align:center;">${item.qty}</td>
+          <td style="padding:8px;text-align:right;">₹${item.price.toLocaleString('en-IN')}</td>
+          <td style="padding:8px;text-align:right;font-weight:700;">₹${(item.price * item.qty).toLocaleString('en-IN')}</td>
+        </tr>
+      `).join('');
+
+      document.getElementById("invSubtotal").textContent = `₹${d.subtotal.toLocaleString('en-IN')}`;
+      if (d.discount > 0) {
+        document.getElementById("invDiscountRow").style.display = "flex";
+        document.getElementById("invDiscount").textContent = `-₹${d.discount.toLocaleString('en-IN')}`;
+      } else {
+        document.getElementById("invDiscountRow").style.display = "none";
+      }
+      document.getElementById("invShipping").textContent = d.shipping === 0 ? "Free Express" : `₹${d.shipping}`;
+      document.getElementById("invGrandTotal").textContent = `₹${d.grandTotal.toLocaleString('en-IN')}`;
+
+      document.getElementById("taxInvoiceModal").classList.add("active");
+    }
+
+    function closeTaxInvoiceModal() {
+      document.getElementById("taxInvoiceModal").classList.remove("active");
+    }
+
+    function closeInvoiceOnBackdrop(e) {
+      if (e.target.id === "taxInvoiceModal") {
+        closeTaxInvoiceModal();
+      }
+    }
+
+    /* ==========================================================================
+       FAVOURITES / WISHLIST
+       ========================================================================== */
+    function toggleFav(id) {
+      if (wishlist.includes(id)) {
+        wishlist = wishlist.filter(x => x !== id);
+        showToastAlert("Removed from favourites");
+      } else {
+        wishlist.push(id);
+        showToastAlert("Saved to favourites ❤️");
+      }
+      localStorage.setItem("rsw_hl_wishlist", JSON.stringify(wishlist));
+      updateWishlistDisplay();
+      renderProductsGrid();
+    }
+
+    function updateWishlistDisplay() {
+      document.getElementById("wishlistCount").textContent = wishlist.length;
+      document.getElementById("wishlistDrawerTitleCount").textContent = wishlist.length;
+
+      const body = document.getElementById("wishlistItemsList");
+      if (!wishlist.length) {
+        body.innerHTML = `
+          <div class="empty-cart-state">
+            <div class="empty-icon-wrap">
+              <svg class="icon" style="width:28px;height:28px" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </div>
+            <h4 style="font-size:16px;color:#0f172a;margin-bottom:6px;">No Saved Favourites</h4>
+            <p style="font-size:13px;color:#64748b;">Click the heart icon on any Formula 1 shake or tea to bookmark it.</p>
+          </div>
+        `;
+        return;
+      }
+
+      body.innerHTML = wishlist.map(id => {
+        const p = products.find(prod => prod.id === id);
+        if (!p) return "";
+        return `
+          <div class="cart-item-card">
+            <img src="${p.image}" alt="${p.name}" class="cart-item-photo">
+            <div class="cart-item-details">
+              <span class="cart-item-title">${p.name}</span>
+              <span class="cart-item-price-tag">₹${p.price.toLocaleString('en-IN')}</span>
+              <div style="display:flex;gap:8px;margin-top:6px;">
+                <button class="btn-add-bag" style="padding:4px 12px;font-size:11.5px;" onclick="addToBagItem(${p.id})">Add to Bag</button>
+                <button class="remove-action-btn" onclick="toggleFav(${p.id})">Remove</button>
+              </div>
+            </div>
+          </div>
+        `;
+      }).join("");
+    }
+
+    function toggleWishlistDrawer() {
+      document.getElementById("wishlistDrawer").classList.toggle("active");
+      document.getElementById("drawerOverlay").classList.toggle("active");
+    }
+
+    function closeAllDrawers() {
+      document.getElementById("cartDrawer").classList.remove("active");
+      document.getElementById("wishlistDrawer").classList.remove("active");
+      document.getElementById("drawerOverlay").classList.remove("active");
+    }
+
+    /* ==========================================================================
+       MODAL QUICK VIEW WITH INDIAN FLAVOR SELECTOR
+       ========================================================================== */
+    function openModalView(id) {
+      const p = products.find(x => x.id === id);
+      if (!p) return;
+      modalProduct = p;
+      modalQuantity = 1;
+      document.getElementById("modalQtyVal").textContent = modalQuantity;
+
+      document.getElementById("mProductImg").src = p.image;
+      document.getElementById("mProductImg").alt = p.name;
+      document.getElementById("mProductCat").textContent = p.cat || p.category;
+      document.getElementById("mProductTitle").textContent = p.name;
+      document.getElementById("mProductPrice").textContent = `₹${p.price.toLocaleString('en-IN')}`;
+      document.getElementById("mProductOldPrice").textContent = p.oldPrice ? `₹${p.oldPrice.toLocaleString('en-IN')}` : "";
+      document.getElementById("mProductDesc").textContent = p.desc || "";
+      document.getElementById("mProductSpec").textContent = p.spec || "";
+      document.getElementById("mProductRating").textContent = p.rating || 5.0;
+      document.getElementById("mProductReviews").textContent = `(${p.reviews || 100} verified reviews)`;
+      document.getElementById("mProductStars").innerHTML = renderStars(p.rating || 5.0);
+
+      // Render Flavors
+      const flavorContainer = document.getElementById("modalFlavorContainer");
+      const flavorPills = document.getElementById("modalFlavorPills");
+      if (p.flavors && p.flavors.length > 0) {
+        flavorContainer.style.display = "block";
+        modalFlavor = p.flavors[0];
+        flavorPills.innerHTML = p.flavors.map((f, idx) => `
+          <button class="flavor-choice-btn ${idx === 0 ? 'active' : ''}" onclick="selectFlavorChoice('${f}', this)">${f}</button>
+        `).join("");
+      } else {
+        flavorContainer.style.display = "none";
+        modalFlavor = "";
+      }
+
+      document.getElementById("btnModalAddBag").onclick = () => {
+        addToBagItem(modalProduct.id, modalQuantity, modalFlavor);
+        closeQuickModal();
+        toggleCartDrawer();
+      };
+
+      document.getElementById("quickModal").classList.add("active");
+    }
+
+    function selectFlavorChoice(flavor, btn) {
+      modalFlavor = flavor;
+      document.querySelectorAll(".flavor-choice-btn").forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+    }
+
+    function closeQuickModal() {
+      document.getElementById("quickModal").classList.remove("active");
+    }
+
+    function closeModalOnBackdrop(e) {
+      if (e.target.id === "quickModal") {
+        closeQuickModal();
+      }
+    }
+
+    function adjustModalQty(delta) {
+      modalQuantity = Math.max(1, modalQuantity + delta);
+      document.getElementById("modalQtyVal").textContent = modalQuantity;
+    }
+
+    /* ==========================================================================
+       MOBILE NAVIGATION & VIP
+       ========================================================================== */
+    function toggleMobileNav() {
+      document.getElementById("navTabs").classList.toggle("mobile-active");
+    }
+
+    function closeMobileNav() {
+      document.getElementById("navTabs").classList.remove("mobile-active");
+    }
+
+    function handleVipSubmit(e) {
+      e.preventDefault();
+      const val = document.getElementById("vipEmailInput").value;
+      if (val) {
+        showToastAlert("Welcome to RS Wellness Club! Check inbox for RSWELL10 voucher code.");
+        document.getElementById("vipEmailInput").value = "";
+      }
+    }
+
+    let toastTimer;
+    function showToastAlert(msg) {
+      const box = document.getElementById("toastNotification");
+      document.getElementById("toastText").textContent = msg;
+      box.classList.add("show");
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => {
+        box.classList.remove("show");
+      }, 2600);
+    }
+  </script>
+</body>
+
+</html>
